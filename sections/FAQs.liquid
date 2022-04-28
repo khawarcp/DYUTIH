@@ -1,213 +1,47 @@
 <section class="faqs-content">
     <div class="container">
         <div class="accordion_container">
+            {% for block in section.blocks %}
             <div class="accordian-tabs">
                 <div class="accordion_head">
-                    <h5> What does DYUTiH mean?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
+                    <h5> {{ block.settings.quiz }}
+                        <span class="button-arrow-img"><img src="{{ 'button-arrow.svg' | asset_url }}" alt="button-arrow"></span>
                     </h5>
                 </div>
                 <div class="accordion_body" style="display: none;">
                     <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
+                        {{ block.settings.answer }}
                     </p>
                 </div>
             </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>What is the shelf life of DYUTiH products?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
-                    </p>
-                </div>
-            </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>What steps do you recommend for each product use?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
-                    </p>
-                </div>
-            </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>Are DYUTiH products hypoallergenic?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
-                    </p>
-                </div>
-            </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>Are DYUTiH products recyclable?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
-                    </p>
-                </div>
-            </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>Fragrance is listed as in ingredient in DYUTiH products? What type of fragrance is used?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
-                    </p>
-                </div>
-            </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>Are DYUTiH products GMO-free?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
-                    </p>
-                </div>
-            </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>Do you test on animals?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
-                    </p>
-                </div>
-            </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>Do you offer samples?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
-                    </p>
-                </div>
-            </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>What does “made with organic ingredients” mean?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers. It’s a mode of production that employs cropping and
-                        animal husbandry techniques that help contribute to a balanced environment by preserving the
-                        health of the soil, of animals, and of ecosystems. It is based on the following basic
-                        principles:
-                    </p>
-                    <ul>
-                        <li>Protecting the environment, minimizing soil degradation and erosion, reducing pollution
-                            and optimizing biological productivity</li>
-                            <li>Maintaining long-term soil fertility by fostering the conditions that promote biological
-                                activity</li>
-                            <li>Maintaining biodiversity within the ecosystem</li>
-                            <li>Recycling materials and resources as much as possible within the farm system</li>
-                            <li>As in other forms of production, caring appropriately for farm animals in order to
-                                promote theirhealth and meet their behavioural needs</li>
-                            <li>Using renewable resources within locally organized farming systems</li>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>What type of preservatives are used in DYUTiH products?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
-                    </p>
-                </div>
-            </div>
-            <div class="accordian-tabs">
-                <div class="accordion_head">
-                    <h5>Where are DYUTiH products made?
-                        <span class="button-arrow-img"><img src="assets/images/button-arrow.svg" alt="button-arrow"></span>
-                    </h5>
-                </div>
-                <div class="accordion_body" style="display: none;">
-                    <p>
-                        All DYUTiH products are made with organic ingredients which comply with the optimal
-                        standards for organic farming. This means no use of GMO’s, pesticides or herbicides,
-                        hormones, or antibiotics during organic farming. Organic farming helps to preserve
-                        ecological systems and diversity.Organic agriculture is much more just farming without
-                        pesticides or chemical fertilizers.
-                    </p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
+
+{% schema %}
+{
+    "name" : "FAQ Content",
+    "settings" : [
+       
+    ],
+    "blocks":[
+        {
+            "name": "FAQ",
+           "type": "FAQ",
+            "settings" :[
+                {
+                    "type": "textarea",
+                    "id": "quiz",
+                    "label": "Question"
+                },
+                {
+                    "type": "textarea",
+                    "id": "answer",
+                    "label": "Answer"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
