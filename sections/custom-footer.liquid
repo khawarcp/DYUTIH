@@ -1,0 +1,127 @@
+<footer>
+    <div class="container">
+        <div class="footer-logo">
+            <a href="#"><img src="assets/images/footer-logo.svg" alt="footer-logo"></a>
+        </div>
+        <div class="footer-flex">
+            <div class="f-contact-info">
+                <h6>Address:</h6>
+                <span>Los Angeles, California 92879</span>
+                <br>
+                <h6>Email address:</h6>
+                <a href="#">ourskin@DYUTIHorganics.com</a>
+                <br>
+                <h6>Website:</h6>
+                <a href="#">www.DYUTIHorganics.com</a>
+            </div>
+            <div class="f-shop-links">
+                <h5>Shop All Products</h5>
+                <ul>
+                    <li><a href="#">REPLENISHING</a></li>
+                    <li><a href="#">ULTRA GLOW BOOSTING</a></li>
+                    <li><a href="#">PURIFYING</a></li>
+                    <li><a href="#">RADIANCE BOOSTING</a></li>
+                    <li><a href="#">REFINING</a></li>
+                    <li><a href="#">rEYEcovery</a></li>
+                    <li><a href="#">GLOW BOOSTING</a></li>
+                    <li><a href="#">SKIN RENEWING</a></li>
+                </ul>
+            </div>
+            <div class="f-social-links">
+                <h5>Social Media</h5>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2022 DYUTiH™ Inc. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+{% schema %}
+{
+    "name": "Footer",
+    "settings": [
+            {
+                "type" : "header",
+                "content" : "Logo"
+            },
+            {
+                "type": "checkbox",
+                "id": "use_svg",
+                "label": "Use SVG",
+                "default": true
+            }, 
+            {
+                "type": "text",
+                "id": "svg_logo",
+                "label": "SVG Logo"
+            },
+            {
+                "type": "image_picker",
+                "id": "logo",
+                "label": "Logo"
+            },
+            {
+                "type" : "header",
+                "content" : "Contact Details"
+            },
+            {
+                "type": "text",
+                "id": "address_text",
+                "label": "Address Text"
+            },
+           {
+               "type": "text",
+               "id": "address",
+               "label": "Address"
+           },
+           {
+               "type": "text",
+               "id": "email_text",
+               "label": "Email Text"
+           },
+          {
+              "type": "text",
+              "id": "emai",
+              "label": "Email"
+          },
+          {
+              "type": "text",
+              "id": "ewebsite_text",
+              "label": "Website Text"
+          },
+         {
+             "type": "text",
+             "id": "website",
+             "label": "Website"
+         },
+        {
+            "type": "link_list",
+            "id": "footer_menu",
+            "label": "Footer Menu"
+        },
+       {
+           "type": "text",
+           "id": "social_media_text",
+           "label": "Social Media Text"
+       },
+      {
+          "type": "header",
+          "content": "Copyright"
+      },
+     {
+         "type": "textarea",
+         "id": "copyright_text",
+         "label": "Copyright Text"
+     }
+    ]
+}
+{% endschema %}
