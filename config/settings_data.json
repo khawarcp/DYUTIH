@@ -83,10 +83,10 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
@@ -182,6 +182,22 @@
         "type": "main-password-footer",
         "settings": {
           "color_scheme": "background-1"
+        }
+      },
+      "custom-footer": {
+        "type": "custom-footer",
+        "settings": {
+          "use_svg": true,
+          "svg_logo": "https:\/\/cdn.shopify.com\/s\/files\/1\/0642\/3828\/9152\/files\/footer-logo.svg?v=1651138833",
+          "address_text": "Address:",
+          "address": "Los Angeles, California 92879",
+          "email_text": "Email address:",
+          "emai": "ourskin@DYUTIHorganics.com",
+          "ewebsite_text": "Website:",
+          "website": "www.DYUTIHorganics.com",
+          "footer_menu": "footer",
+          "social_media_text": "Social Media",
+          "copyright_text": "DYUTiH™ Inc. All Rights Reserved"
         }
       }
     },
