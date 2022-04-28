@@ -1,0 +1,54 @@
+<section class="home-banner">
+    <video autoplay muted loop id="myVideo">
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
+    </video>
+    <div class="home-text">
+        <div class="container">
+            <h6> {{ section.settings.subheading}} </h6>
+            <div class="home-text-title">
+                <h1>
+                    {{ section.settings.heading | newline_to_br}}
+            </div>
+            <div class="custom-site-btn">
+                {% if section.settings.button_url != blank and section.settings.button_text != blank  %}
+                <a href="{{ section.settings.button_url }}"><img src="{{ 'button-arrow.svg' | asset_url }}" alt="Button Arrow">{{ section.settings.button_text }}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name" : "Banner",
+   "settings": [
+      {
+          "type": "text",
+          "id": "subheading",
+          "label": "SubHeading",
+          "default": "Welcome to DYUTIH"
+      },
+     {
+         "type": "textarea",
+         "id": "heading",
+         "label": "Heading"
+     },
+    {
+        "type": "text",
+        "id": "video_url",
+        "label": "Video URL"
+    },
+   {
+       "type": "text",
+       "id": "button_text",
+       "label": "Button Text",
+       "default": "Shop Now"
+   },
+   {
+       "type": "url",
+       "id" : "button_url",
+         "label": "Button URL"
+   }
+   ]
+}
+{% endschema %}

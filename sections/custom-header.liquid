@@ -1,0 +1,131 @@
+<header>
+    {%- for block in section.blocks -%}
+    {%- case block.type -%}
+    {%- when 'announcement' -%}
+        <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+        {%- if block.settings.text != blank -%}
+            {%- if block.settings.link != blank -%}
+            <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+            {%- endif -%}
+                <span>
+                {{ block.settings.text | escape }}
+                {%- if block.settings.link != blank -%}
+                    {% render 'icon-arrow' %}
+                {%- endif -%}
+                </span>
+            {%- if block.settings.link != blank -%}
+            </a>
+            {%- endif -%}
+        {%- endif -%}
+        </div>
+    {%- endcase -%}
+    {%- endfor -%}
+    <div class="main-header">
+        <div class="container">
+            <div class="main-header-flex">
+                <div class="logo">
+                    <a href="#"><img src="assets/images/logo.svg" alt="logo"></a>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Skin Care KITs</a></li>
+                        <li><a href="#">FAQ’s</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">contact </a></li>
+                    </ul>
+                </div>
+                <div class="user-cart">
+                    <ul>
+                        <li><a href="#"><img src="assets/images/user.svg" alt="user"></a></li>
+                        <li><a href="#"><img src="assets/images/search.svg" alt="search"></a></li>
+                        <li><a href="#"><img src="assets/images/shopping-bag.svg" alt="shopping-bag"></a></li>
+                        <li class="d-none menu-bar"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% schema %}
+{
+   "name": "Header",
+  "settings": [
+   {
+       "type": "checkbox",
+       "id": "use_svg",
+       "label": "Use SVG",
+       "default": true
+   }, 
+    {
+         "type": "text",
+         "id": "svg_logo",
+         "label": "SVG Logo"
+     },
+    {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+    }
+  ],
+  "max_blocks": 12,
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement-bar.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Unlock 20% off Your First Order When You Sign Up for email",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "accent-1",
+              "label": "t:sections.all.colors.accent_1.label"
+            },
+            {
+              "value": "accent-2",
+              "label": "t:sections.all.colors.accent_2.label"
+            },
+            {
+              "value": "background-1",
+              "label": "t:sections.all.colors.background_1.label"
+            },
+            {
+              "value": "background-2",
+              "label": "t:sections.all.colors.background_2.label"
+            },
+            {
+              "value": "inverse",
+              "label": "t:sections.all.colors.inverse.label"
+            }
+          ],
+          "default": "accent-1",
+          "label": "t:sections.all.colors.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "announcement"
+      }
+    ]
+  }
+}
+{% endschema %}

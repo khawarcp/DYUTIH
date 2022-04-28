@@ -1,41 +1,41 @@
 @font-face {
     font-family: 'switzer-light';
-    src: url('../fonts/switzer-light.otf');
+    src: url('switzer-light.otf');
 }
 
 @font-face {
     font-family: 'switzer-regular';
-    src: url('../fonts/switzer-regular.otf');
+    src: url('switzer-regular.otf');
 }
 
 @font-face {
     font-family: 'switzer-medium';
-    src: url('../fonts/switzer-medium.otf');
+    src: url('-medium.otf');
 }
 
 @font-face {
     font-family: 'switzer-semibold';
-    src: url('../fonts/switzer-semibold.otf');
+    src: url('switzer-semibold.otf');
 }
 
 @font-face {
     font-family: 'switzer-bold';
-    src: url('../fonts/switzer-bold.otf');
+    src: url('switzer-bold.otf');
 }
 
 @font-face {
     font-family: 'switzer-extrabold';
-    src: url('../fonts/switzer-extrabold.otf');
+    src: url('switzer-extrabold.otf');
 }
 
 @font-face {
     font-family: 'switzer-black';
-    src: url('../fonts/switzer-black.otf');
+    src: url('switzer-black.otf');
 }
 
 @font-face {
     font-family: 'cutivemono-regular';
-    src: url('../fonts/cutivemono-regular.ttf');
+    src: url('cutivemono-regular.ttf');
 }
 
 html {
