@@ -1,0 +1,2184 @@
+@font-face {
+    font-family: 'switzer-light';
+    src: url('../fonts/switzer-light.otf');
+}
+
+@font-face {
+    font-family: 'switzer-regular';
+    src: url('../fonts/switzer-regular.otf');
+}
+
+@font-face {
+    font-family: 'switzer-medium';
+    src: url('../fonts/switzer-medium.otf');
+}
+
+@font-face {
+    font-family: 'switzer-semibold';
+    src: url('../fonts/switzer-semibold.otf');
+}
+
+@font-face {
+    font-family: 'switzer-bold';
+    src: url('../fonts/switzer-bold.otf');
+}
+
+@font-face {
+    font-family: 'switzer-extrabold';
+    src: url('../fonts/switzer-extrabold.otf');
+}
+
+@font-face {
+    font-family: 'switzer-black';
+    src: url('../fonts/switzer-black.otf');
+}
+
+@font-face {
+    font-family: 'cutivemono-regular';
+    src: url('../fonts/cutivemono-regular.ttf');
+}
+
+html {
+    scroll-behavior: unset;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: #231F20;
+    font-family: 'switzer-regular';
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a, span {
+    display: inline-block;
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'cutivemono-regular';
+    color: #231F20;
+    letter-spacing: -0.03em;
+    line-height: 23px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    font-family: 'switzer-semibold';
+    text-transform: uppercase;
+    color: #231F20;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: 'switzer-regular';
+}
+
+h5 {
+    font-size: 14px;
+    /* color: #231F20; */
+    font-family: 'switzer-medium';
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 11px;
+    font-family: 'switzer-semibold';
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+}
+
+/**********************
+        HEADER
+**********************/
+.announcement-bar {
+    background-color: #AF272F;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.announcement-bar span {
+    color: #FFFFFF;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+header {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 9999;
+}
+
+.main-header .main-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(240 238 228 / 10%);
+    padding: 12px 0px;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.user-cart ul {
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul li a {
+    margin-right: 30px;
+    color: #F0EEE4;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.navigation ul li:last-child a {
+    margin-right: 0px;
+}
+
+.navigation ul li.active a {
+    font-family: 'switzer-medium';
+}
+
+.user-cart ul li a {
+    margin-right: 15px;
+}
+
+.user-cart ul li:last-child a {
+    margin-right: 0px;
+}
+
+.home-banner {
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.home-banner video {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-text {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 3;
+}
+
+.home-banner::before {
+    background-color: rgb(0 0 0 / 50%);
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.home-text h6 {
+    color: rgb(240 238 228 / 70%);
+    margin-bottom: 3px;
+}
+
+.home-text-title h1 {
+    color: #F0EEE4;
+}
+
+.home-text-title h1 span {
+    font-size: inherit;
+    font-family: inherit;
+    color: #AF272F;
+}
+
+.home-text-title {
+    margin-bottom: 35px;
+}
+
+.custom-site-btn a {
+    background-color: #AF272F;
+    color: #FFFFFF;
+    min-width: 130px;
+    padding: 9px 15px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'switzer-medium';
+    border: 1px solid #AF272F;
+    transition: 0.2s all;
+}
+
+.custom-site-btn a img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    filter: brightness(0) invert(1);
+}
+
+.custom-site-btn a:hover {
+    color: #AF272F;
+    background-color: #fff;
+}
+
+.custom-site-btn a:hover img {
+    filter: brightness(100%) invert(0);
+}
+
+.about-dyutih-sec {
+    padding: 80px 0px;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.about-text {
+    text-align: center;
+}
+
+.about-text h2 {
+    color: #231F20;
+    margin-bottom: 15px;
+}
+
+.about-text h2 span {
+    color: #AF272F;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.about-text p {
+    max-width: 816px;
+    margin: 0px auto 30px;
+}
+
+.about-btn a img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    filter: brightness(0);
+}
+
+.about-btn a {
+    text-decoration: underline;
+    color: black;
+    font-family: 'switzer-medium';
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.dyutih-twosimg {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dyutih-img-col {
+    width: 50%;
+    position: relative;
+}
+
+.dyutih-img-col img {
+    width: 100%;
+    height: auto;
+}
+
+.home-banner.home-parallex-video::before {
+    display: none;
+}
+
+.position-relative-sec {
+    position: relative;
+    z-index: 2;
+}
+
+.best-seller-sec {
+    padding: 60px 0px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgb(240 238 228 / 40%) 100%);
+}
+
+.best-seller-title h6 {
+    color: #AF612C;
+    margin-bottom: 3px;
+}
+
+.best-seller-title h2 span {
+    color: #AF272F;
+    font-family: inherit;
+}
+
+.best-seller-top-text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.about-btn {
+    margin-bottom: 5px;
+}
+
+.best-seller-slider .owl-stage-outer {
+    max-width: 90vw;
+    margin-left: auto;
+}
+
+.best-seller-img {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.best-seller-text h5 {
+    color: rgb(35 31 32 / 80%);
+    margin-bottom: 4px;
+}
+
+.best-seller-text span {
+    color: rgb(175 39 47 / 80%);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.best-seller-text {
+    position: relative;
+}
+
+.bag-img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #231F20;
+    width: 34px;
+    height: 34px;
+    padding: 9px;
+    border-radius: 50%;
+}
+
+.best-seller-sec .owl-thumbs {
+    display: flex;
+    margin: 40px auto 0px;
+    width: 100vw;
+    max-width: 81vw;
+    height: 2px;
+    background-color: #E1DECD;
+}
+
+.best-seller-sec .owl-thumbs button {
+    width: 100%;
+    font-size: 0px;
+    border: 0px;
+    height: 3px;
+}
+
+.best-seller-sec .owl-thumbs button.active {
+    background-color: #AF612C;
+}
+
+.dyutih-properties-main-row {
+    padding: 60px 0px 0px;
+    background-color: #FAF9F3;
+}
+
+.dyutih-properties-main-row .row {
+    justify-content: center;
+}
+
+.dyutih-pro-col {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.dyutih-pro-img img {
+    margin: 0px auto;
+}
+
+.dyutih-pro-img {
+    margin-bottom: 20px;
+}
+
+.dyutih-pro-text h4 {
+    color: #AF612C;
+    margin-bottom: 15px;
+}
+
+.dyutih-pro-text p {
+    color: #231F20;
+    font-size: 21px;
+    margin-bottom: 0px;
+}
+
+.dyutih-pro-text {
+    max-width: 320px;
+    margin: 0px auto;
+}
+
+body {
+    background-color: #F0EEE4;
+}
+
+.dyutih-images-slider-sec {
+    padding: 50px 0px;
+}
+
+.dyutih-images-col {
+    height: 75vh;
+}
+
+.dyutih-images-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dyutih-skin-care-sec h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.dyutih-skin-care-sec h2 span {
+    color: #AF272F;
+    font-family: inherit;
+}
+
+.dyutih-skin-care-tabs ul {
+    border-top: 2px solid #E1DECD;
+    border-bottom: 2px solid #E1DECD;
+}
+
+.dyutih-skin-care-tabs ul li {
+    width: 33.33%;
+    text-align: center;
+    border-right: 2px solid #E1DECD;
+}
+
+.dyutih-skin-care-tabs ul li button {
+    width: 100%;
+    color: rgb(35 31 32 / 40%) !important;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 0px !important;
+    padding: 15px;
+    margin: 0px;
+    border: 0px !important;
+}
+
+.dyutih-skin-care-tabs ul li:last-child {
+    border-right: 0px;
+}
+
+.dyutih-skin-care-tabs ul li button.active {
+    color: #AF272F !important;
+    background-color: transparent !important;
+}
+
+.dyutih-skin-care-tabs .tab-content {
+    margin-top: 30px;
+}
+
+.skin-care-img {
+    margin-bottom: 20px;
+}
+
+.skin-care-text h3 {
+    color: #AF272F;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.skin-care-text h4 {
+    font-family: 'switzer-semibold';
+    font-size: 20px;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+}
+
+.skin-care-text p {
+    margin-bottom: 30px;
+    min-height: 115px;
+}
+
+.dyutih-properties-main-img img {
+    width: 100%;
+}
+
+.dyutih-skin-care-sec {
+    padding-bottom: 80px;
+}
+
+.testimonial-row {
+    display: flex;
+    padding-left: 70px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.testimonials-sec {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F2F0 100%);
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.testimonial-img {
+    width: 40%;
+    position: relative;
+    top: 0;
+    z-index: 9999;
+}
+
+.testimonial-content {
+    width: 50%;
+}
+
+.testimonial-quote img {
+    width: 40px !important;
+    object-fit: contain !important;
+}
+
+.testimonial-quote {
+    margin-bottom: 25px;
+}
+
+.testimonial-content h6 {
+    color: brown;
+    letter-spacing: 0.13em;
+}
+
+.testimonial-content h3 span {
+    font-family: inherit;
+    color: #AF272F;
+}
+
+.testimonial-content h3 {
+    margin-bottom: 20px;
+}
+
+.testt-name-location h4 {
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-family: 'switzer-semibold';
+}
+
+.testi-rating ul {
+    display: flex;
+}
+
+.testi-rating ul li {
+    margin-right: 3px;
+    width: 12px;
+}
+
+.testt-name-location {
+    margin-bottom: 7px;
+}
+
+.testi-rating {
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    max-width: 480px;
+}
+
+.testimonial-slider .owl-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    right: 0px;
+    width: 50%;
+    margin-left: auto;
+    padding-left: 35px;
+}
+
+.testimonial-slider .owl-dots button {
+    width: 30px;
+    height: 1.5px;
+    background-color: #B9BCB6;
+    margin-right: 10px;
+}
+
+.testimonial-slider .owl-dots button.active {
+    background-color: #AF612C;
+}
+
+.dyutih-blog-sec {
+    position: relative;
+}
+
+.dyutih-blog-sec .container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dyutih-blog-content {
+    max-width: 436px;
+    margin-left: auto;
+}
+
+.dyutih-blog-title h2 span {
+    font-family: inherit;
+    color: #AF272F;
+}
+
+.dyutih-blog-title {
+    margin-bottom: 30px;
+}
+
+.dyutih-blog-banner img {
+    width: 100%;
+}
+
+.instagram-sec {
+    padding: 60px 0px;
+}
+
+.instagram-title h6 {
+    color: #AF612C;
+}
+
+.instagram-title h2 span {
+    font-family: inherit;
+    color: #AF272F;
+}
+
+.instagram-title-btn-flex {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.instagram-title-btn-flex .custom-site-btn {
+    margin-bottom: 7px;
+}
+
+.newsletter-sec {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.newsletter-sec h3 span {
+    font-family: inherit;
+    color: #AF272F;
+}
+
+.newsletter-sec h3 {
+    margin-bottom: 10px;
+}
+
+.newsletter-sec p {
+    margin-bottom: 25px;
+}
+
+.newsletter-form {
+    max-width: 550px;
+    margin: 0px auto;
+    border: 1px solid rgb(35 31 32 / 20%);
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.email-container input[type="email"] {
+    width: 75%;
+    border: 0px;
+    padding: 10px 15px;
+    color: #231F20;
+    text-transform: uppercase;
+    background-color: transparent;
+    outline: 0px;
+    font-size: 13px;
+}
+
+.email-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-container input[type="submit"] {
+    width: 25%;
+    border: .5px solid #231F20;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'switzer-medium';
+    letter-spacing: 0.03em;
+}
+
+.email-container input[type="email"]::placeholder {
+    opacity: 0.4;
+}
+
+footer {
+    border-top: 2px solid #E1DECD;
+    padding-top: 40px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+}
+
+.f-contact-info {
+    padding-top: 15px;
+    width: 25%;
+}
+
+.f-contact-info h6 {
+    color: #AF612C;
+    letter-spacing: 0.13em;
+    margin-bottom: 2px;
+}
+
+.f-contact-info a, .f-contact-info span {
+    font-family: 'switzer-medium';
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #231F20;
+}
+
+.f-contact-info br {
+}
+
+.f-social-links h5, .f-shop-links h5 {
+    color: #AF612C;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.f-shop-links {
+    width: 45%;
+}
+
+.f-shop-links ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-shop-links ul li {
+    width: 50%;
+}
+
+.f-social-links ul li a, .f-shop-links ul li a {
+    color: #231F20;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.f-social-links {
+    width: 20%;
+}
+
+.footer-bottom p {
+    margin: 0px;
+    font-family: 'switzer-medium';
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.footer-bottom {
+    border-top: 1px solid #E1DECD;
+    padding: 10px 0px;
+    margin-top: 25px;
+}
+
+.dyutih-hover-product {
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    bottom: 20px;
+    visibility: hidden;
+    transition: 0.2s all;
+}
+
+.dyutih-hover-product span {
+    color: rgb(175 39 47 / 80%);
+    font-size: 14px;
+}
+
+.dyutih-hover-product button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    background-color: #AF272F;
+    padding: 11px;
+    border-radius: 50%;
+}
+
+.dyutih-img-col:hover .dyutih-hover-product {
+    visibility: visible;
+}
+
+.skin-care-img img {
+    width: 100%;
+}
+
+.best-seller-img:hover {
+    cursor: url('../images/product-cursor.png'), auto;
+}
+
+.dyutih-images-col {
+    position: relative;
+}
+
+.dyutih-images-col:hover .dyutih-images-hover-link {
+    visibility: visible;
+}
+
+.dyutih-images-hover-link {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.dyutih-images-hover-link h6 {
+    color: #D5AF97;
+    letter-spacing: 0.13em;
+    margin-bottom: 2px;
+}
+
+.dyutih-images-hover-link h3 {
+    color: #F0EEE4;
+    margin-bottom: 20px;
+}
+
+.dyutih-images-hover-link a {
+    color: #F0EEE4;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    font-size: 11px;
+    width: 112px;
+    height: 42px;
+    background-image: url('../images/ellipse-border.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.empty-div {
+    height: 91px;
+}
+
+.shop-banner-img img {
+    width: 100%;
+}
+
+.header-style2 .navigation ul li a {
+    color: #231F20;
+}
+
+.header-style2 .user-cart ul li a img {
+    filter: brightness(100%) invert(1);
+}
+
+.shop-about-dyutih {
+    background-color: transparent;
+    padding: 40px 0px;
+}
+
+.shop-dyutih-skin-care-sec .dyutih-skin-care-tabs ul li {
+    width: 25%;
+}
+
+.shop-dyutih-skin-care-sec .skin-care-col {
+    margin-bottom: 30px;
+}
+
+.about-banner {
+    position: relative;
+}
+
+.about-banner-text {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.about-banner-text h4 {
+    color: rgb(185 188 182 / 70%);
+    letter-spacing: 0.34em;
+    font-family: 'switzer-semibold';
+    margin-bottom: 3px;
+}
+
+.about-banner-text h2 {
+    color: #F0EEE4;
+}
+
+.about-rows-sec {
+    padding: 40px 0px;
+}
+
+.about-rows-sec .row {
+    align-items: center;
+}
+
+.about-rows-sec .row:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-top: 30px;
+}
+
+.mission-statement-text {
+    padding: 0px 30px;
+}
+
+.mission-statement-text h3 span {
+    font-family: inherit;
+    color: #AF272F;
+}
+
+.mission-statement-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-ourvalues-bg {
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-ourvalues-text {
+    max-width: 466px;
+    margin-left: auto;
+    padding-top: 80px;
+}
+
+.about-ourvalues-text h3 span {
+    font-family: inherit;
+    color: #AF272F;
+}
+
+.about-ourvalues-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.dyutih-do-tea-text p {
+    font-size: 34px;
+    text-align: center;
+    line-height: 42px;
+    color: #AF612C;
+    letter-spacing: -0.07em;
+    margin-bottom: 40px;
+}
+
+.dyutih-do-tea-sec {
+    background: linear-gradient(180deg, #F5F4EE 0%, #F0EEE4 100%);
+    padding: 60px 0px;
+}
+
+.dyutih-do-arrow-img img {
+    margin: 0px auto;
+    border: 1px solid #AF612C;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+}
+
+.faqs-content {
+    padding: 40px 0px 0px;
+}
+
+.accordion_head h5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #E1DECD;
+    padding: 20px 0px;
+    cursor: pointer;
+    color: #AF272F;
+    font-size: 16px;
+    font-family: 'switzer-regular';
+}
+
+.accordian-tabs.active span.button-arrow-img {
+    transform: rotate(90deg);
+}
+
+.accordion_body ul li {
+    font-size: 18px;
+    font-family: 'cutivemono-regular';
+    color: #231F20;
+    letter-spacing: -0.03em;
+    line-height: 23px;
+    background-image: url('../images/faq-list-icon.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 0px 5px;
+    padding-left: 25px;
+    margin-bottom: 8px;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    color: #AF272F;
+    font-family: inherit;
+}
+
+.get-in-touch-form-sec {
+    padding: 40px 0px;
+}
+
+.get-in-touch {
+    max-width: 786px;
+    margin: 0px auto;
+}
+
+.get-in-touch h3 {
+    margin-bottom: 10px;
+}
+
+.get-in-touch p {
+    margin-bottom: 20px;
+}
+
+.get-in-touch form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-container {
+    width: 49.5%;
+    margin-bottom: 8px;
+}
+
+.input-container textarea, .input-container input {
+    width: 100%;
+    border: 1px solid rgb(35 31 32 / 20%);
+    background-color: transparent;
+    padding: 10px 15px;
+    color: rgb(35 31 32 / 100%);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: 'switzer-regular';
+    font-size: 13px;
+    outline: 0px;
+    resize: none;
+}
+
+.input-container textarea::placeholder, .input-container input::placeholder {
+    color: rgb(35 31 32 / 40%);
+}
+
+.input-container:nth-child(5), .input-container:nth-child(6) {
+    width: 100%;
+}
+
+.input-container textarea {
+    min-height: 140px;
+}
+
+.input-submit {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.input-submit input {
+    background-color: #AF272F;
+    border: 0px;
+    color: #F0EEE4;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: 'switzer-medium';
+    padding: 12px 25px;
+    font-size: 12px;
+}
+
+.blog-content-sec {
+    padding: 40px 0px;
+}
+
+.blog-img {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.blog-text h5 {
+    color: #231F20;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.blog-text a {
+    color: #231F20;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.blog-col {
+    margin-bottom: 40px;
+}
+
+.blog-detail-sec::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgb(35 31 32 / 70%);
+}
+
+.blog-detail-sec .about-banner-text {
+    align-items: flex-end;
+    padding-bottom: 60px;
+}
+
+.blog-detail-content-sec {
+    padding: 50px 0px;
+}
+
+p.border-left-para {
+    border-left: 5px solid #B9BCB6;
+    padding-left: 10px;
+}
+
+.back-share-blogs {
+    border-top: 2px solid #E1DECD;
+    margin-top: 30px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-blog-link {
+    display: flex;
+    align-items: center;
+    color: #231F20;
+    letter-spacing: 0.06em;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'switzer-medium';
+    text-decoration: underline;
+}
+
+.back-blog-link img {
+    transform: rotate(180deg);
+    margin-right: 10px;
+    filter: brightness(0);
+}
+
+.share-blogs {
+    display: flex;
+    align-items: center;
+}
+
+.share-blogs ul {
+    display: flex;
+}
+
+.share-blogs h5 {
+    margin-right: 12px;
+}
+
+.back-blog-link:hover {
+    color: #AF272F;
+}
+
+.back-blog-link:hover img {
+    filter: brightness(100%);
+}
+
+.share-blogs ul li a {
+    margin-right: 15px;
+}
+
+.share-blogs ul li a:hover i {
+    color: #AF272F;
+}
+
+.share-blogs ul li:last-child a {
+    margin-right: 0px;
+}
+
+.skin-care-kits .mission-statement-text h6 {
+    color: #AF612C;
+    letter-spacing: 0.13em;
+}
+
+.skin-care-kits .mission-statement-text h2 {
+    margin-bottom: 10px;
+    max-width: 480px;
+}
+
+.skin-care-kits .mission-statement-text p {
+    margin-bottom: 20px;
+}
+
+.skin-care-kits .row:nth-child(even) {
+    margin-top: 0px;
+}
+
+.skin-care-kits .row {
+    margin-bottom: 40px;
+}
+
+.skin-care-kits .mission-statement-img {
+    background: linear-gradient(180deg, #F2E0D4 0%, #F5EAE8 100%);
+}
+
+.skin-care-kits .mission-statement-img img {
+    margin: auto;
+}
+
+.product-detail-sec {
+    padding: 40px 0px;
+}
+
+.main-header-flex {
+}
+
+header.header-style2 .main-header-flex {
+    border-bottom: 1px solid rgb(35 31 32 / 10%);
+}
+
+.product-detail-carousel .owl-thumbs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-detail-img {
+    margin-bottom: 15px;
+}
+
+.product-detail-carousel .owl-thumbs .owl-thumb-item {
+    border: 0px;
+    padding: 0px 8px;
+    /* border: 2px solid #AF272F; */
+}
+
+.product-detail-carousel .owl-thumbs {
+    margin: 0px -8px;
+}
+
+.product-detail-carousel .owl-thumbs .owl-thumb-item img {
+    border: 2px solid transparent;
+}
+
+.product-detail-carousel .owl-thumbs .owl-thumb-item.active img {
+    border: 2px solid #AF272F;
+}
+
+.product-detail-text h2 {
+    color: #AF272F;
+    margin-bottom: 5px;
+}
+
+.product-detail-text h4 {
+    font-family: 'switzer-semibold';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rating-link-btn ul {
+    display: flex;
+}
+
+.rating-link-btn ul li {
+    margin-right: 6px;
+    width: 15px;
+}
+
+.rating-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rating-link-btn a {
+    color: #231F20;
+    text-decoration: underline;
+    font-family: 'switzer-light';
+    font-size: 14px;
+    letter-spacing: -0.03em;
+}
+
+.product-detail-text h5 {
+    color: rgb(175 39 47 / 80%);
+    font-size: 18px;
+    font-family: 'switzer-regular';
+}
+
+.cus-description {
+    border-top: 1px solid rgb(35 31 32 / 10%);
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.product-detail-text {
+    max-width: 470px;
+}
+
+p.description-color {
+    color: #AF612C;
+}
+
+.quantity-cart-btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 95%;
+    margin-bottom: 0;
+}
+
+.quantity-number {
+    width: 48.5%;
+    border: 1px solid #AF612C;
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+}
+
+.add-to-cart-btn {
+    width: 48.5%;
+}
+
+.quantity-number input {
+    text-align: center;
+    color: #AF612C;
+    font-family: 'switzer-medium';
+    font-size: 16px;
+    background-color: transparent;
+    border: 0px;
+    width: 60%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quantity-number button {
+    border: 0px;
+    background-color: transparent;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AF612C;
+    font-size: 18px;
+}
+
+.add-to-cart-btn button {
+    background-color: #AF272F;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    height: 36px;
+    width: 100%;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.add-to-cart-btn button img {
+    filter: brightness(0) invert(1);
+    margin-right: 10px;
+}
+
+.benfits-tips h4 {
+    margin-top: 30px;
+}
+
+.share-blogs.share-product {
+    border-top: 1px solid rgb(35 31 32 / 10%);
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.share-blogs.share-product h5 {
+    color: #231F20;
+}
+
+.clean-botanical-actives .row {
+    align-items: center;
+}
+
+.actives-text-col h4 {
+    font-size: 24px;
+    font-family: 'switzer-semibold';
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+}
+
+.actives-text-col ul li span {
+    font-family: 'switzer-semibold';
+    color: #AF272F;
+}
+
+.actives-text-col ul li {
+    font-size: 18px;
+    font-family: 'cutivemono-regular';
+    color: #231F20;
+    letter-spacing: -0.03em;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+
+.actives-text-col {
+    padding-right: 50px;
+}
+
+.clean-botanical-pro-imgs {
+    padding-right: 50px;
+    position: relative;
+}
+
+.clean-botanical-pro-img2 {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+
+.clean-botanical-properties .clean-botanical-properties-row {
+    align-items: center;
+}
+
+.botanical-pro-list-col img {
+    margin-bottom: 15px;
+}
+
+.botanical-pro-list-col h5 {
+    color: #AF612C;
+    font-family: 'switzer-regular';
+    letter-spacing: 0.06em;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.botanical-pro-list-col p {
+    font-size: 17px;
+}
+
+.botanical-pro-list-col {
+    margin-bottom: 40px;
+}
+
+.clean-botanical-pro-list {
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.clean-botanical-properties {
+    padding-bottom: 100px;
+}
+
+.clean-botanical-img {
+    padding-left: 20px;
+}
+
+.full-ingredient-listing-sec {
+    padding: 40px 0px;
+}
+
+.full-ingredient-listing-sec h4 {
+    font-family: 'switzer-semibold';
+    font-size: 24px;
+    letter-spacing: 0px;
+    margin-bottom: 25px;
+}
+
+.ingredient-listing ul li {
+    font-size: 18px;
+    font-family: 'cutivemono-regular';
+    color: #231F20;
+    letter-spacing: -0.03em;
+    line-height: 23px;
+    background-image: url('../images/faq-list-icon.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 0px 5px;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    width: 50%;
+}
+
+.ingredient-listing ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ingredient-listing ul {
+    margin-bottom: 20px;
+}
+
+.complete-skin-routine .best-seller-top-text {
+    justify-content: center;
+    text-align: center;
+}
+
+.complete-skin-routine .best-seller-title h6 {
+    letter-spacing: 0.13em;
+}
+
+.best-seller-sec.complete-skin-routine .best-seller-img:hover {
+    cursor: inherit;
+}
+
+.complete-skin-routine .owl-stage-outer {
+    max-width: 100%;
+}
+
+.best-seller-sec.complete-skin-routine .best-seller-slider {
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.best-seller-sec.complete-skin-routine .owl-thumbs {
+    margin-top: 0px;
+}
+
+.reviews-img img {
+    width: 100%;
+}
+
+/***************************
+     
+    ||  Media Query ||
+
+*****************************/
+@media screen and (max-width: 1199px) {
+    .home-banner {
+        min-height: 700px;
+    }
+
+    .dyutih-images-col {
+        height: 400px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .best-seller-slider .owl-stage-outer {
+        max-width: 95vw;
+    }
+
+    h5 {
+        font-size: 13px;
+    }
+
+    .dyutih-pro-text p {
+        font-size: 18px;
+        max-width: 260px;
+        margin: 0px auto;
+    }
+
+    .navigation ul li a {
+        font-size: 13px;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .testimonials-sec {
+        padding: 60px 0px;
+    }
+
+    .testimonial-img {
+        top: 0;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .f-social-links {
+        width: 15%;
+    }
+
+    .about-ourvalues-bg {
+        height: 520px;
+    }
+
+    .about-ourvalues-text {
+        max-width: 420px;
+    }
+
+    .dyutih-do-tea-text p {
+        font-size: 28px;
+    }
+
+    .clean-botanical-pro-img2 {
+        top: 60px;
+        max-width: 90%;
+    }
+
+    .best-seller-sec.complete-skin-routine .best-seller-slider {
+        max-width: 95vw;
+    }
+
+    section.shop-dyutih-skin-care-sec.dyutih-skin-care-sec .dyutih-skin-care-tabs ul li button {
+        font-size: 14px;
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .home-banner {
+        min-height: 550px;
+    }
+
+    .navigation ul li a {
+        font-size: 11px;
+        margin-right: 15px;
+    }
+
+    .announcement-bar span {
+        font-size: 11px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .home-text-title {
+        margin-bottom: 30px;
+    }
+
+    .about-dyutih-sec {
+        padding: 60px 0px;
+    }
+
+    .dyutih-pro-text p {
+        font-size: 16px;
+    }
+
+    .dyutih-pro-col {
+        margin-bottom: 40px;
+    }
+
+    .dyutih-skin-care-tabs ul li button {
+        font-size: 14px;
+    }
+
+    .skin-care-text h4 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .skin-care-text p {
+        font-size: 14px;
+        min-height: 162px;
+    }
+
+    .testimonial-content p {
+        font-size: 14px;
+    }
+
+    .testimonial-slider .owl-dots {
+        bottom: -20px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .dyutih-blog-content {
+        max-width: 330px;
+    }
+
+    .f-shop-links {
+        width: 40%;
+    }
+
+    .f-social-links ul li a, .f-shop-links ul li a {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .f-social-links {
+        width: 16%;
+    }
+
+    .f-contact-info {
+        width: 35%;
+    }
+
+    .newsletter-form {
+        max-width: 430px;
+    }
+
+    .mission-statement-text {
+        padding: 0px;
+    }
+
+    .about-ourvalues-bg {
+        height: 400px;
+    }
+
+    .about-ourvalues-text {
+        max-width: 330px;
+        padding-top: 50px;
+    }
+
+    .dyutih-do-tea-text p {
+        font-size: 24px;
+    }
+
+    .dyutih-do-arrow-img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    span.button-arrow-img {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .accordion_head h5 {
+        position: relative;
+        padding-right: 20px;
+    }
+
+    .actives-text-col h4 {
+        font-size: 20px;
+    }
+
+    .botanical-pro-list-col h5 {
+        font-size: 12px;
+    }
+
+    .ingredient-listing ul li {
+        font-size: 13px;
+    }
+
+    section.shop-dyutih-skin-care-sec.dyutih-skin-care-sec .dyutih-skin-care-tabs ul li button {
+        font-size: 11px;
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navigation {
+        display: none;
+    }
+
+    li.d-none.menu-bar {
+        display: block !important;
+    }
+
+    li.d-none.menu-bar i {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 90px;
+        left: 0px;
+        right: 0px;
+        background-color: #f0eee4;
+        padding: 15px 0px;
+        border-top: 1px solid rgb(35 31 32 / 20%);
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation ul li a {
+        color: #231F20;
+        margin-right: 0px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .navigation ul li:last-child a {
+        margin-bottom: 0px;
+    }
+
+    .announcement-bar span {
+        font-size: 9px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h6 {
+        font-size: 10px;
+    }
+
+    .dyutih-img-col {
+        width: 100%;
+    }
+
+    .dyutih-hover-product {
+        visibility: visible;
+        left: 15px;
+        right: 15px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .dyutih-pro-text p {
+        margin: auto;
+    }
+
+    .dyutih-images-hover-link {
+        visibility: visible;
+    }
+
+    .dyutih-skin-care-tabs ul {
+        flex-direction: column;
+    }
+
+    .dyutih-skin-care-tabs ul li {
+        width: 100%;
+    }
+
+    .dyutih-skin-care-tabs ul li button {
+        border-bottom: 2px solid #E1DECD !important;
+    }
+
+    .dyutih-skin-care-tabs ul li:last-child button {
+        border: 0px !important;
+    }
+
+    .about-btn a {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .skin-care-text p {
+        min-height: auto;
+    }
+
+    .skin-care-col {
+        margin-bottom: 30px;
+    }
+
+    .dyutih-skin-care-sec {
+        padding-bottom: 30px;
+    }
+
+    .testimonial-row {
+        padding-left: 0px;
+        flex-direction: column;
+    }
+
+    .testimonial-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .testimonial-content {
+        width: 100%;
+    }
+
+    .testimonial-slider .owl-dots {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .dyutih-blog-sec .container {
+        position: relative;
+    }
+
+    .dyutih-blog-content {
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+    .dyutih-blog-title {
+        margin-bottom: 20px;
+    }
+
+    .instagram-title-btn-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .instagram-title {
+        margin-bottom: 20px;
+    }
+
+    .footer-flex {
+        flex-direction: column;
+    }
+
+    .f-contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .f-shop-links {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .f-social-links {
+        width: 100%;
+    }
+
+    .best-seller-slider .owl-stage-outer {
+        max-width: 100vw;
+    }
+
+    .best-seller-slider {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .instagram-sec .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .instagram-img {
+        margin-bottom: 20px;
+    }
+
+    .about-banner-text h2 {
+        font-size: 17px;
+    }
+
+    .about-banner-text h4 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .mission-statement-img {
+        margin-bottom: 15px;
+    }
+
+    section.about-ourvalues-bg {
+        height: 500px;
+        position: relative;
+    }
+
+    section.about-ourvalues-bg::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        background-color: rgb(0 0 0 / 40%);
+        right: 0px;
+    }
+
+    .about-ourvalues-text {
+        position: relative;
+        z-index: 2;
+    }
+
+    .about-ourvalues-text p {
+        color: #fff;
+    }
+
+    .about-ourvalues-text h3 {
+        color: #fff;
+    }
+
+    .dyutih-do-tea-text p {
+        font-size: 18px;
+        line-height: initial;
+    }
+
+    .dyutih-do-tea-sec {
+        padding: 40px 0px 0px;
+    }
+
+    .about-rows-sec .row:nth-child(even) {
+        margin-top: 0px;
+    }
+
+    header.header-style2 li.d-none.menu-bar i {
+        color: #231F20;
+        ;;;;;;}
+
+    .product-detail-text {
+        margin-top: 30px;
+    }
+
+    .clean-botanical-img {
+        margin-top: 30px;
+    }
+
+    .clean-botanical-properties .clean-botanical-properties-row {
+        /* flex-direction: column-reverse; */
+    }
+
+    .clean-botanical-actives .row {
+        flex-direction: column-reverse;
+    }
+
+    .actives-text-col {
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+
+    .clean-botanical-properties {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .clean-botanical-pro-imgs {
+        margin-bottom: 80px;
+    }
+
+    .clean-botanical-pro-list {
+        padding-left: 0px;
+    }
+
+    .home-banner {
+    }
+
+    .ingredient-listing ul li {
+        width: 100%;
+    }
+
+    .best-seller-sec.complete-skin-routine .best-seller-slider {
+        max-width: 100vw;
+    }
+
+    .shop-dyutih-skin-care-sec .dyutih-skin-care-tabs ul li {
+        width: 100%;
+    }
+
+    section.shop-dyutih-skin-care-sec.dyutih-skin-care-sec .dyutih-skin-care-tabs ul li button {
+        padding: 13px 0px;
+    }
+
+    section.shop-about-dyutih.about-dyutih-sec {
+        padding: 40px 0px;
+    }
+
+    section.shop-about-dyutih.about-dyutih-sec p {
+        margin-bottom: 0px;
+    }
+
+    section.about-rows-sec.skin-care-kits .mission-statement-text {
+        margin-bottom: 30px;
+    }
+
+    .skin-care-kits .row {
+        margin-bottom: 0px;
+    }
+}
