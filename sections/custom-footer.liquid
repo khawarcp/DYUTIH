@@ -1,45 +1,58 @@
 <footer>
     <div class="container">
         <div class="footer-logo">
-            <a href="#"><img src="assets/images/footer-logo.svg" alt="footer-logo"></a>
+            <a href="{{ routes.roote_url }}">
+                {% if section.settings.use_svg %}
+                      <img src="{{  section.settings.svg_logo }}" alt="footer-logo">
+                {% else %}
+                    <img src="{{  section.settings.logo | asset_img_url: 'master' }}" alt="footer-logo">
+                {% endif %}
+            </a>
         </div>
         <div class="footer-flex">
             <div class="f-contact-info">
-                <h6>Address:</h6>
-                <span>Los Angeles, California 92879</span>
+                {% if section.settings.address != blank %}
+                <h6> {{ section.settings.address_text }} </h6>
+                <span>{{ section.settings.address }}</span>
                 <br>
-                <h6>Email address:</h6>
-                <a href="#">ourskin@DYUTIHorganics.com</a>
+                {% endif %}
+                {% if section.settings.email != blank %}                
+                <h6>{{ section.settings.email_text }}</h6>
+                <a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
                 <br>
-                <h6>Website:</h6>
-                <a href="#">www.DYUTIHorganics.com</a>
+                {% endif %}
+                {% if section.settings.website != blank %}
+                <h6> {{ section.settings.website_text }} </h6>
+                <a href="{{ shop.url }}">{{ section.settings.website }}</a>
+                {% endif %}
             </div>
             <div class="f-shop-links">
-                <h5>Shop All Products</h5>
+                <h5>{{ linklists[section.settings.footer_menu].title }}</h5>
                 <ul>
-                    <li><a href="#">REPLENISHING</a></li>
-                    <li><a href="#">ULTRA GLOW BOOSTING</a></li>
-                    <li><a href="#">PURIFYING</a></li>
-                    <li><a href="#">RADIANCE BOOSTING</a></li>
-                    <li><a href="#">REFINING</a></li>
-                    <li><a href="#">rEYEcovery</a></li>
-                    <li><a href="#">GLOW BOOSTING</a></li>
-                    <li><a href="#">SKIN RENEWING</a></li>
+                    {% for link in linklists[section.settings.footer_menu].links %}
+                    <li><a href="{{ link.url }}"> {{ link.title }} </a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="f-social-links">
-                <h5>Social Media</h5>
+                <h5>{{ section.settings.social_media_text }}</h5>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    {% if settings.social_facebook_link %}
+                    <li><a href="{{ settings.social_facebook_link }}">Facebook</a></li>
+                    {% endif %}
+                    {% if settings.social_twitter_link %}
+                    <li><a href="{{ settings.social_twitter_link }}">Twitter</a></li>
+                    {% endif %}
+                    {% if settings.social_instagram_link %}
+                    <li><a href="{{ settings.social_instagram_link }}">Instagram</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
         <div class="container">
-            <p>© 2022 DYUTiH™ Inc. All Rights Reserved</p>
+            <p> &copy; {{ 'now' | date : "%Y"  }}  {{ section.settings.copyright_text }}</p>
         </div>
     </div>
 </footer>
@@ -90,12 +103,12 @@
            },
           {
               "type": "text",
-              "id": "emai",
+              "id": "email",
               "label": "Email"
           },
           {
               "type": "text",
-              "id": "ewebsite_text",
+              "id": "website_text",
               "label": "Website Text"
           },
          {
