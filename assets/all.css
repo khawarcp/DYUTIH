@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'switzer-medium';
-    src: url('-medium.otf');
+    src: url('switzer-medium.otf');
 }
 
 @font-face {
@@ -126,6 +126,12 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+header.header.header--middle-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .announcement-bar span {
