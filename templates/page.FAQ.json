@@ -1,14 +1,21 @@
 {
-    "sections":{
-        "page-banner":{
-            "type" : "page-banner"
-        },
-        "FAQs":{
-            "type" : "FAQs"
-        }
+  "sections": {
+    "page-banner": {
+      "type": "page-banner",
+      "settings": {
+        "back_image": "shopify:\/\/shop_images\/about-banner.png",
+        "heading": "Frequently Asked Questions",
+        "subheading": "DYUTIH Organics"
+      }
     },
-    "order" : [
-        "page-banner",
-        "FAQs"
-    ]
+    "FAQs": {
+      "type": "FAQs",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "page-banner",
+    "FAQs"
+  ]
 }
