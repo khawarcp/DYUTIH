@@ -1,8 +1,8 @@
-<section class="about-ourvalues-bg" style="background-image: url('assets/images/our-values-bg.png');">
+<section class="about-ourvalues-bg" loading="lazy" style="background-image: url('{{ section.settings.image | img_url : 'master' }}');">
     <div class="container">
         <div class="about-ourvalues-text">
-            <h3>our <span>VALUES</span></h3>
-            <p>Our ingredients will be guided and informed by our commitment to sustainable organic compounds that are safe and ethical.</p>
+            <h3> {{ section.settings.title }} </h3>
+            <p>{{ section.settings.description }} </p>
         </div>
     </div>
 </section>
