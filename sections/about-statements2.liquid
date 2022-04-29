@@ -1,14 +1,21 @@
-<section class="dyutih-do-tea-sec">
+<section class="about-rows-sec">
     <div class="container">
-        <div class="dyutih-do-tea-text">
-            <p>DYUTIH (do-tea) means ‘beauty’ in ancient Sanskrit, DYUTIH features a modern alchemy of organically formed ingredients to target skin concerns using minimalist, high performing, plant-based, clean formulations.</p>
-            <div class="dyutih-do-arrow-img">
-                <img src="assets/images/dyutih-do-arrow.svg" alt="dyutih-do-arrow">
+        {% for block in section.blocks %}
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mission-statement-img">
+                        <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy" alt="dyutih-do-img1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mission-statement-text">
+                        <p>{{ block.settings.description }}</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        {% endfor %}
     </div>
 </section>
-
 {% schema %}
 {
     "name" : "Statements 2",
@@ -20,11 +27,6 @@
            "type": "Statement",
            "limit" : 2,
            "settings": [
-               {
-                   "id" : "title",
-                  "type": "text",
-                  "label": "Title"
-               },
                {
                    "id" : "description",
                   "type": "textarea",
