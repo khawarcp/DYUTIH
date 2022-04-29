@@ -423,6 +423,46 @@ header {
     border-radius: 50%;
 }
 
+.header-wrapper--border-bottom {
+    border: 0px;
+}
+
+header.header.header--middle-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(240 238 228 / 10%);
+    padding: 12px 0px;
+}
+
+h1.header__heading a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+nav.header__inline-menu ul li a span {
+    padding: 0px;
+    margin-right: 30px;
+    color: #F0EEE4;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav.header__inline-menu ul li a {
+    padding: 0px;
+}
+
+.header__icons.user-cart a svg path {
+    fill: #fff;
+}
+
+details-modal.header__search svg#icon-search path {
+    fill: #fff;
+}
+
+
 .best-seller-sec .owl-thumbs {
     display: flex;
     margin: 40px auto 0px;
