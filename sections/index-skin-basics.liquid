@@ -22,8 +22,7 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container">
                     <div class="row">
-                        {% assign products = collections[section.settings.collection_clenaser].products %}
-                        {% for product in products %}
+                        {% for product in collections[section.settings.collection_clenaser].products %}
                         <div class="col-md-4">
                             <div class="skin-care-col">
                                 <div class="skin-care-img">
@@ -40,146 +39,52 @@
                             </div>
                         </div>
                         {% endfor %}
-                        <div class="col-md-4">
-                            <div class="skin-care-col">
-                                <div class="skin-care-img">
-                                    <img src="assets/images/skin-care-img2.png" alt="skin-care-img2">
-                                </div>
-                                <div class="skin-care-text">
-                                    <h3>REFINING</h3>
-                                    <h4>White Willow pH Toner</h4>
-                                    <p>Enriched with moisturizing and antioxidant ingredients, it helps to gently
-                                        restore the skin’s pH level for softer, more supple skin.</p>
-                                    <div class="custom-site-btn">
-                                        <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="skin-care-col">
-                                <div class="skin-care-img">
-                                    <img src="assets/images/skin-care-img3.png" alt="skin-care-img3">
-                                </div>
-                                <div class="skin-care-text">
-                                    <h3>Replenishing</h3>
-                                    <h4>oat milk Cleanser</h4>
-                                    <p>Rich and gentle oat milk cleanser thoroughly cleanses the face, neck,
-                                        décolleté and eye contour area without drying.</p>
-                                    <div class="custom-site-btn">
-                                        <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="container">
                     <div class="row">
+                        {% for product in collections[section.settings.collection_glow].products %}
                         <div class="col-md-4">
                             <div class="skin-care-col">
                                 <div class="skin-care-img">
-                                    <img src="assets/images/skin-care-img1.png" alt="skin-care-img1">
+                                    <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
                                 </div>
                                 <div class="skin-care-text">
-                                    <h3>PURIFYING</h3>
-                                    <h4>Coconut Gel Cleanser</h4>
-                                    <p>This unique Coconut Gel Cleanser features moisturizing Coconut Oil and Aloe
-                                        Vera to help gently cleanse the face, body and hair without drying.</p>
+                                    <h3>{{ product.title }}</h3>
+                                    <h4> {{ product.metafields.my_fields.product_subtitle }} </h4>
+                                    <p> {{ product.description }} </p>
                                     <div class="custom-site-btn">
-                                        <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                        <a href="{{ product.url }}"><img src="{{ 'button-arrow.svg' | | asset_url }}" alt="">SHOP NOW </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="skin-care-col">
-                                <div class="skin-care-img">
-                                    <img src="assets/images/skin-care-img2.png" alt="skin-care-img2">
-                                </div>
-                                <div class="skin-care-text">
-                                    <h3>REFINING</h3>
-                                    <h4>White Willow pH Toner</h4>
-                                    <p>Enriched with moisturizing and antioxidant ingredients, it helps to gently
-                                        restore the skin’s pH level for softer, more supple skin.</p>
-                                    <div class="custom-site-btn">
-                                        <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="skin-care-col">
-                                <div class="skin-care-img">
-                                    <img src="assets/images/skin-care-img3.png" alt="skin-care-img3">
-                                </div>
-                                <div class="skin-care-text">
-                                    <h3>Replenishing</h3>
-                                    <h4>oat milk Cleanser</h4>
-                                    <p>Rich and gentle oat milk cleanser thoroughly cleanses the face, neck,
-                                        décolleté and eye contour area without drying.</p>
-                                    <div class="custom-site-btn">
-                                        <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                 <div class="container">
                     <div class="row">
+                        {% for product in collections[section.settings.collection_moisturizers].products %}
                         <div class="col-md-4">
                             <div class="skin-care-col">
                                 <div class="skin-care-img">
-                                    <img src="assets/images/skin-care-img1.png" alt="skin-care-img1">
+                                    <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
                                 </div>
                                 <div class="skin-care-text">
-                                    <h3>PURIFYING</h3>
-                                    <h4>Coconut Gel Cleanser</h4>
-                                    <p>This unique Coconut Gel Cleanser features moisturizing Coconut Oil and Aloe
-                                        Vera to help gently cleanse the face, body and hair without drying.</p>
+                                    <h3>{{ product.title }}</h3>
+                                    <h4> {{ product.metafields.my_fields.product_subtitle }} </h4>
+                                    <p> {{ product.description }} </p>
                                     <div class="custom-site-btn">
-                                        <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                        <a href="{{ product.url }}"><img src="{{ 'button-arrow.svg' | | asset_url }}" alt="">SHOP NOW </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="skin-care-col">
-                                <div class="skin-care-img">
-                                    <img src="assets/images/skin-care-img2.png" alt="skin-care-img2">
-                                </div>
-                                <div class="skin-care-text">
-                                    <h3>REFINING</h3>
-                                    <h4>White Willow pH Toner</h4>
-                                    <p>Enriched with moisturizing and antioxidant ingredients, it helps to gently
-                                        restore the skin’s pH level for softer, more supple skin.</p>
-                                    <div class="custom-site-btn">
-                                        <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="skin-care-col">
-                                <div class="skin-care-img">
-                                    <img src="assets/images/skin-care-img3.png" alt="skin-care-img3">
-                                </div>
-                                <div class="skin-care-text">
-                                    <h3>Replenishing</h3>
-                                    <h4>oat milk Cleanser</h4>
-                                    <p>Rich and gentle oat milk cleanser thoroughly cleanses the face, neck,
-                                        décolleté and eye contour area without drying.</p>
-                                    <div class="custom-site-btn">
-                                        <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
