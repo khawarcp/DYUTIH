@@ -1,0 +1,46 @@
+<section class="dyutih-twosimg position-relative-sec">
+    <div class="dyutih-img-col">
+        <img src="assets/images/dyutih-img1.png" alt="dyutih-img1">
+        <div class="dyutih-hover-product">
+            <h5>Purifying</h5>
+            <span>$99.95</span>
+            <button><img src="assets/images/product-bag.svg" alt="product-bag"></button>
+        </div>
+    </div>
+    <div class="dyutih-img-col">
+        <img src="assets/images/dyutih-img2.png" alt="dyutih-img2">
+        <div class="dyutih-hover-product">
+            <h5>replenishing</h5>
+            <span>$99.95</span>
+            <button><img src="assets/images/product-bag.svg" alt="product-bag"></button>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name" : "Featured Products",
+   "settings": [
+   ],
+   "blocks" : [
+        {
+           "type": "Featured_Product",
+           "name" : "Featured Product",
+           "limit": 2,
+          "settings": [
+                {
+                    "type": "product",
+                    "id": "featured_product",
+                    "label": "Featured Product"
+                }
+          ]
+        }
+   ],
+   "presets":[
+    {
+        "name": "Featured Products",
+        "category": "Custom Section"
+    }
+   ]
+}
+{% endschema %}
