@@ -18,14 +18,15 @@
                 <div class="item">
                     <div class="best-seller-col">
                         <a href="{{ product.url }}" class="best-seller-img">
-                            <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+                            <img src="{{ product.featured_image | img_url: 'master' }}" loading="lazy" alt="{{ product.title }}">
                         </a>
                         <div class="best-seller-text">
                             <h5>{{ product.title }}</h5>
-                            <span>{{ product.price | money }}</span>
-                            <a href="{{ product.url }}" class="bag-img">
-                                <img src="{{ 'bag-img.svg' | asset_url }}" alt="bag-img">
-                            </a>
+                            <span>{{ product.price | money }}</span>                            
+                            <form method="post" action="/cart/add">
+                                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                                <a href="javascript:void(0)" class="bag-img"> <button type="submit"><img src="{{ 'bag-img.svg' | asset_url }}" loading="lazy" alt="bag-img"></button></a>
+                            </form> 
                         </div>
                     </div>
                 </div>

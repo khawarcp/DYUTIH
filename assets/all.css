@@ -394,7 +394,7 @@ header {
     position: relative;
 }
 
-.bag-img {
+/* .bag-img {
     position: absolute;
     right: 0px;
     top: 0px;
@@ -405,6 +405,21 @@ header {
     width: 34px;
     height: 34px;
     padding: 9px;
+    border-radius: 50%;
+} */
+
+.bag-img button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #231F20;
+    width: 34px;
+    height: 34px;
+    padding: 9px;
+    background-color: transparent;
     border-radius: 50%;
 }
 
