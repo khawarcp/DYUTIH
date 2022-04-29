@@ -1,0 +1,42 @@
+<section class="dyutih-images-slider-sec">
+    <div class="owl-carousel">
+        {% for block in section.blocks %}
+            {%  assign collection = collections[block.settings.collection] %}
+            <div class="dyutih-images-col">
+                <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
+                <div class="dyutih-images-hover-link">
+                    <h6> {{ collection.metafields.my_fields.collection_product_subtitle }} </h6>
+                    <h3>{{ collection.title }}</h3>
+                    <a href="{{ collection.url }}">Shop now</a>
+                </div>
+            </div>    
+        {% endfor %}
+    </div>
+</section>
+
+{% schema %}
+{
+    "name" : "Collection Slider",
+   "settings": [
+   ],
+   "blocks" : [
+        {
+           "type": "Collection",
+           "name" : "Collection",
+          "settings": [
+                {
+                    "type": "collection",
+                    "id": "collection",
+                    "label": "Collection"
+                }
+          ]
+        }
+   ],
+   "presets":[
+    {
+        "name": "Collection Slider",
+        "category": "Custom Section"
+    }
+   ]
+}
+{% endschema %}
