@@ -1,26 +1,61 @@
 {
-    "sections": {
-      "page-banner": {
-        "type": "page-banner"
-      },
-      "about-statements": {
-        "type": "about-statements"
-      },
-      "about-hero": {
-        "type": "about-hero"
-      },
-      "about-dyutih": {
-        "type": "about-dyutih"
-      },
-      "about-statements2": {
-        "type": "about-statements2"
+  "sections": {
+    "page-banner": {
+      "type": "page-banner",
+      "settings": {
+        "back_image": "shopify:\/\/shop_images\/about-banner_b591f2f3-fbc3-42a2-9a97-e74fb1ffce8c.png",
+        "heading": "Replenish. Refine. Renew.",
+        "subheading": "DYUTIH Organics"
       }
     },
-    "order": [
-      "page-banner",
-        "about-statements",
-        "about-hero",
-        "about-dyutih",
-        "about-statements2"
-    ]
-  }
+    "about-statements": {
+      "type": "about-statements",
+      "blocks": {
+        "74406743-48ce-47fd-814d-d1ad5c3a2cc8": {
+          "type": "Statement",
+          "settings": {
+            "title": "MISSION <span>STATEMENT<\/span>",
+            "description": "Aiming to release your skin from impurities of life’s challenges, our products are formulated\n                            for each skin type in mind with a combination of organic materials. Our three R’s to infuse\n                            the skin’s barrier are replenish, refine, and renew, the Dyutih in you.",
+            "image": "shopify:\/\/shop_images\/mission-statement.png"
+          }
+        },
+        "ec84adaf-1b05-402e-86bd-50bd90f80179": {
+          "type": "Statement",
+          "settings": {
+            "title": "VISION <span>STATEMENT<\/span>",
+            "description": "With your mind, body, and a simplistic beauty ritual in mind, we strive for you to have your\n                            inner beauty be reflected on your outward self each day, one droplet at a time. Take the\n                            time to rebuild your outer-glow, as self-care is now your new priority.",
+            "image": "shopify:\/\/shop_images\/mission-statement_d7288c20-52aa-44dd-bb2c-0e6aee42c991.png"
+          }
+        }
+      },
+      "block_order": [
+        "74406743-48ce-47fd-814d-d1ad5c3a2cc8",
+        "ec84adaf-1b05-402e-86bd-50bd90f80179"
+      ],
+      "settings": {
+      }
+    },
+    "about-hero": {
+      "type": "about-hero",
+      "settings": {
+      }
+    },
+    "about-dyutih": {
+      "type": "about-dyutih",
+      "settings": {
+      }
+    },
+    "about-statements2": {
+      "type": "about-statements2",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "page-banner",
+    "about-statements",
+    "about-hero",
+    "about-dyutih",
+    "about-statements2"
+  ]
+}
