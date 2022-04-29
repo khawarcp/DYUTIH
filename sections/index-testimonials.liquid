@@ -1,12 +1,93 @@
+<section class="testimonials-sec">
+  <div class="container">
+      <div class="testimonial-slider">
+          <div class="owl-carousel">
+            {% for block in section %}
+              <div class="item">
+                  <div class="testimonial-row">
+                      <div class="testimonial-img">
+                          <img src="{{ block.settings.image }}" alt="testimonial-img">
+                      </div>
+                      <div class="testimonial-content">
+                          <div class="testimonial-quote">
+                              <img src="{{ 'testimonial-quote.svg' | asset_url }}" alt="testimonial-quote">
+                          </div>
+                          <h6>TESTIMONIALS</h6>
+                          <h3>{{ block.settings.heading }}</h3>
+                          <div class="testt-name-location">
+                              <h4>{{ block.settings.name }}, <span>{{ block.settings.city }}</span></h4>
+                          </div>
+                          <div class="testi-rating">
+                              <ul>
+                                {% assign rating = block.settings.rating %}
+                                {% for i in (1..rating) %}
+                                  <li><img src="{{ 'testi-rating.svg' | asset_url }}" alt="testi-rating"></li>
+                                {% endfor %}
+                              </ul>
+                          </div>
+                          <p>{{ block.settings.review }}</p>
+                      </div>
+                  </div>
+              </div>
+              {% endfor %}
+          </div>
+      </div>
+  </div>
+</section>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name" : "Testimonials",
+   "settings": [
+       
+   ],
+   "blocks" :[
+      {
+        "name" : "Testimonials",
+          "type" : "Testimoinals",
+          "settings":[
+               {
+                 "type": "text",
+                 "id": "heading",
+                 "label": "Heading"
+               },
+              {
+                "type": "text",
+                "id": "name",
+                "label": "Name"
+              },
+             {
+               "type": "text",
+               "id": "city",
+               "label": "City"
+             },
+            {
+              "type": "textarea",
+              "id": "review",
+              "label": "Review"
+            },
+           {
+             "type": "range",
+             "id": "rating",
+             "label": "Ratings",             
+             "min": 1,
+             "max": 5,
+             "step": 1,
+             "default": 5
+           },
+          {
+            "type": "text",
+            "id": "image",
+            "label": "Image",
+            "info" : "Upload gif image in files and paste the url here."
+          }
+          ]
+      }
+   ],
+   "presets":[
+    {
+        "name": "Testimonials",
+        "category": "Custom Section"
+    }
+   ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
