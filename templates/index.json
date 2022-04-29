@@ -248,6 +248,13 @@
         "button_text": "Read our blog + news",
         "button_link": "#"
       }
+    },
+    "1651227398672a5724": {
+      "type": "index-newsletter",
+      "settings": {
+        "heading": "Sign <span>up<\/span>",
+        "subheading": "Join our list for exclusive offers, new products and latest news."
+      }
     }
   },
   "order": [
@@ -261,6 +268,7 @@
     "16512112457c44e114",
     "1651215172c7eb96e1",
     "1651225908acf264b5",
-    "16512268114f8e829e"
+    "16512268114f8e829e",
+    "1651227398672a5724"
   ]
 }
