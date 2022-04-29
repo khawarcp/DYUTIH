@@ -795,6 +795,10 @@ body {
     margin-bottom: 25px;
 }
 
+.newsletter-sec  .newsletter-form .form__message{
+    justify-content: center;
+}
+
 .newsletter-form {
     max-width: 550px;
     margin: 0px auto;

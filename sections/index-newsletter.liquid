@@ -2,7 +2,7 @@
   <div class="container">
       <h3> {{ section.settings.heading }} </h3>
       <p>{{ section.settings.subheading }}</p>
-      {% form 'customer', class: 'newsletter-form' %}
+      {% form 'customer' %}
         
               <input type="hidden" name="contact[tags]" value="newsletter">
           <div class="newsletter-form">
