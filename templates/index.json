@@ -81,6 +81,61 @@
         "button_url": "#",
         "collection": "best-seller"
       }
+    },
+    "1651210093d43e3cb0": {
+      "type": "index-hero",
+      "blocks": {
+        "6cfa09de-23f8-418b-a7a7-4b4df069a6eb": {
+          "type": "Featured_Product",
+          "settings": {
+            "feature_image": "shopify:\/\/shop_images\/dyutih-pro-img1.png",
+            "heading": "Organic Ingredients",
+            "info": "Made with Organically Farmed Ingredients"
+          }
+        },
+        "4817ae9a-3087-406a-8519-e794cd6ef660": {
+          "type": "Featured_Product",
+          "settings": {
+            "feature_image": "shopify:\/\/shop_images\/dyutih-pro-img2.png",
+            "heading": "Clean Beauty",
+            "info": "Free of GMO’s & Other Harsh Ingredients"
+          }
+        },
+        "8970f21d-6011-4cb3-8975-ddd21696bfb7": {
+          "type": "Featured_Product",
+          "settings": {
+            "feature_image": "shopify:\/\/shop_images\/dyutih-pro-img3.png",
+            "heading": "Plant-Based",
+            "info": "Made with the Power of Natural, Plant Actives"
+          }
+        },
+        "0256599c-7cb9-452b-b1b8-765996e65953": {
+          "type": "Featured_Product",
+          "settings": {
+            "feature_image": "shopify:\/\/shop_images\/dyutih-pro-img4.png",
+            "heading": "Cruelty-Free",
+            "info": "Never Tested on Animals"
+          }
+        },
+        "3e2349fd-b624-4899-825e-852bda31fb7d": {
+          "type": "Featured_Product",
+          "settings": {
+            "feature_image": "shopify:\/\/shop_images\/dyutih-pro-img5.png",
+            "heading": "Vegan",
+            "info": "100% Free from Animal By-Products"
+          }
+        }
+      },
+      "block_order": [
+        "6cfa09de-23f8-418b-a7a7-4b4df069a6eb",
+        "4817ae9a-3087-406a-8519-e794cd6ef660",
+        "8970f21d-6011-4cb3-8975-ddd21696bfb7",
+        "0256599c-7cb9-452b-b1b8-765996e65953",
+        "3e2349fd-b624-4899-825e-852bda31fb7d"
+      ],
+      "settings": {
+        "hero_image": "shopify:\/\/shop_images\/dyutih-properties-main-img.png"
+      }
     }
   },
   "order": [
@@ -89,6 +144,7 @@
     "16512044410c658b5d",
     "1651207128302f6b75",
     "165120715322fdbd79",
-    "1651208870b1d37cb3"
+    "1651208870b1d37cb3",
+    "1651210093d43e3cb0"
   ]
 }
