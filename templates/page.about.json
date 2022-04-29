@@ -46,12 +46,33 @@
     "about-dyutih": {
       "type": "about-dyutih",
       "settings": {
-        "title": "",
-        "description": ""
+        "description": "DYUTIH (do-tea) means ‘beauty’ in ancient Sanskrit, DYUTIH features a modern alchemy of organically formed ingredients to target skin concerns using minimalist, high performing, plant-based, clean formulations."
       }
     },
     "about-statements2": {
       "type": "about-statements2",
+      "blocks": {
+        "113116fc-9ca6-4976-acfb-4e684ac05f2c": {
+          "type": "Statement",
+          "settings": {
+            "title": "",
+            "description": "DYUTiH skin care features exotic botanicals and rituals that discerning women have rendered indispensable for a lifetime of luminous, youthful-looking skin.   A modern alchemy of 100% all natural, organic ingredients (proven and newfound botanical actives) targets skin concerns using minimalist, high performance, organic formulations.",
+            "image": "shopify:\/\/shop_images\/dyutih-do-img1.png"
+          }
+        },
+        "6c406c05-68d6-449e-b914-4a79c9e33421": {
+          "type": "Statement",
+          "settings": {
+            "title": "",
+            "description": "The concentrated, botanically-focused collection marries with an efficacious delivery system for an exceptional, healthy-looking glow.  Indulgent skin care creams, lotions and elixirs help to improve skin tone and texture for visible short term and long term results. DYUTiH means beauty in Sanskrit.  Known as the “mother of all languages”, it is the oldest language in the world with an Indo-European origin.",
+            "image": "shopify:\/\/shop_images\/dyutih-do-img2.png"
+          }
+        }
+      },
+      "block_order": [
+        "113116fc-9ca6-4976-acfb-4e684ac05f2c",
+        "6c406c05-68d6-449e-b914-4a79c9e33421"
+      ],
       "settings": {
       }
     }
