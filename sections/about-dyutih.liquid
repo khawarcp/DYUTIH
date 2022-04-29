@@ -1,10 +1,12 @@
 <section class="dyutih-do-tea-sec">
     <div class="container">
         <div class="dyutih-do-tea-text">
-            <p>DYUTIH (do-tea) means ‘beauty’ in ancient Sanskrit, DYUTIH features a modern alchemy of organically formed ingredients to target skin concerns using minimalist, high performing, plant-based, clean formulations.</p>
+            <p>{{ section.settings.description }}</p>
+            {% if section.settings.description != blank %}
             <div class="dyutih-do-arrow-img">
-                <img src="assets/images/dyutih-do-arrow.svg" alt="dyutih-do-arrow">
+                <img src="{{ 'dyutih-do-arrow.svg' | asset_url }}" alt="dyutih-do-arrow">
             </div>
+            {% endif %}
         </div>
     </div>
 </section>
@@ -15,19 +17,9 @@
     "name" : "Richtext",
    "settings": [
             {
-                "id" : "title",
-            "type": "text",
-            "label": "Title"
-            },
-            {
                 "id" : "description",
             "type": "textarea",
             "label": "Description"
-            },
-            {
-                "id" : "image",
-            "type": "image_picker",
-            "label": "Image"
             }
    ]
 }
