@@ -1,20 +1,15 @@
 <section class="dyutih-twosimg position-relative-sec">
-    <div class="dyutih-img-col">
-        <img src="assets/images/dyutih-img1.png" alt="dyutih-img1">
-        <div class="dyutih-hover-product">
-            <h5>Purifying</h5>
-            <span>$99.95</span>
-            <button><img src="assets/images/product-bag.svg" alt="product-bag"></button>
+    {% for block in section.blocks %}
+       {% assign product in all_products[block.settings.featured_product] %}
+        <div class="dyutih-img-col">
+            <img src="{{ product.featured_image | img_url: 'master' }}" loading = "lazy" alt="{{ product.title }}">
+            <div class="dyutih-hover-product">
+                <h5>{{ product.title }}</h5>
+                <span>{{ product.price }}</span>
+                <button><img src="{{ 'product-bag.svg' | asset_url }}" loading="lazy" alt="product-bag"></button>
+            </div>
         </div>
-    </div>
-    <div class="dyutih-img-col">
-        <img src="assets/images/dyutih-img2.png" alt="dyutih-img2">
-        <div class="dyutih-hover-product">
-            <h5>replenishing</h5>
-            <span>$99.95</span>
-            <button><img src="assets/images/product-bag.svg" alt="product-bag"></button>
-        </div>
-    </div>
+    {% endfor %}
 </section>
 
 {% schema %}
