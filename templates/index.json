@@ -182,6 +182,27 @@
         "collection_glow": "glow-boosting-elixirs",
         "collection_moisturizers": "skin-moisturizers"
       }
+    },
+    "1651225908acf264b5": {
+      "type": "index-testimonials",
+      "blocks": {
+        "8829046d-c161-4c61-b75e-422e1f3cdbfb": {
+          "type": "Testimoinals",
+          "settings": {
+            "heading": "our customers <span>love<\/span> us",
+            "name": "Hazel",
+            "city": "los angeles",
+            "review": "My skin is so soft and smooth after using DYUTIH. The Replenshing Oat Milk Cleanser\n                                    has done wonders for my skin. It is my go-to-cleanser.",
+            "rating": 5,
+            "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0642\/3828\/9152\/files\/testimonial-img-min.gif?v=1651225525"
+          }
+        }
+      },
+      "block_order": [
+        "8829046d-c161-4c61-b75e-422e1f3cdbfb"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -193,6 +214,7 @@
     "1651208870b1d37cb3",
     "1651210093d43e3cb0",
     "16512112457c44e114",
-    "1651215172c7eb96e1"
+    "1651215172c7eb96e1",
+    "1651225908acf264b5"
   ]
 }
