@@ -1,0 +1,26 @@
+<section class="home-banner home-parallex-video">
+    <video autoplay muted loop id="myVideo">
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
+    </video>
+</section>
+
+
+{% schema %}
+{
+    "name" : "Video Section",
+   "settings": [
+     {
+         "type": "text",
+         "id": "video_url",
+         "label": "Video URL",
+        "info": "Upload the video in Files and paste the video URL here."
+     }
+   ],
+   "presets":[
+    {
+        "name": "Richtext",
+        "category": "Custom Section"
+    }
+   ]
+}
+{% endschema %}

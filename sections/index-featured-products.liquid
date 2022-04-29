@@ -1,16 +1,17 @@
 <section class="dyutih-twosimg position-relative-sec">
     {% for block in section.blocks %}
-       {% assign products = all_products[block.settings.featured_product] %}
-       {% for product in products %}
+       {% assign product = all_products[block.settings.featured_product] %}
         <div class="dyutih-img-col">
             <img src="{{ product.featured_image | img_url: 'master' }}" loading = "lazy" alt="{{ product.title }}">
             <div class="dyutih-hover-product">
                 <h5>{{ product.title }}</h5>
-                <span>{{ product.price }}</span>
-                <button><img src="{{ 'product-bag.svg' | asset_url }}" loading="lazy" alt="product-bag"></button>
+                <span>{{ product.price | money }}</span>                
+                <form method="post" action="/cart/add">
+                    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                    <button type="submit"><img src="{{ 'product-bag.svg' | asset_url }}" loading="lazy" alt="product-bag"></button>
+                </form> 
             </div>
         </div>
-       {% endfor %}
     {% endfor %}
 </section>
 
