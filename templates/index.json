@@ -239,6 +239,15 @@
       ],
       "settings": {
       }
+    },
+    "16512268114f8e829e": {
+      "type": "index-blog",
+      "settings": {
+        "heading": "Learn More                         <span>DYUTIH BLOG + NEWS<\/span>",
+        "image": "shopify:\/\/shop_images\/dyutih-blog-banner.png",
+        "button_text": "Read our blog + news",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -251,6 +260,7 @@
     "1651210093d43e3cb0",
     "16512112457c44e114",
     "1651215172c7eb96e1",
-    "1651225908acf264b5"
+    "1651225908acf264b5",
+    "16512268114f8e829e"
   ]
 }
