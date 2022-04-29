@@ -173,6 +173,40 @@
       ],
       "settings": {
       }
+    },
+    "1651212571f328cb7b": {
+      "type": "index-skin-care",
+      "blocks": {
+        "f3b72ad4-3f4c-4879-92f4-b1f2b30ef4a0": {
+          "type": "Collection",
+          "settings": {
+            "collection_title": "Cleansers + Toners",
+            "collection": "cleansers-toners"
+          }
+        },
+        "f9805b45-71f4-4e92-97d5-adbbc53af978": {
+          "type": "Collection",
+          "settings": {
+            "collection_title": "Glow Boosting Elixirs",
+            "collection": "glow-boosting-elixirs"
+          }
+        },
+        "bb8fd681-955a-4edd-88d2-34f7e62e4e56": {
+          "type": "Collection",
+          "settings": {
+            "collection_title": "Skin Quenching Moisturizers",
+            "collection": "skin-moisturizers"
+          }
+        }
+      },
+      "block_order": [
+        "f3b72ad4-3f4c-4879-92f4-b1f2b30ef4a0",
+        "f9805b45-71f4-4e92-97d5-adbbc53af978",
+        "bb8fd681-955a-4edd-88d2-34f7e62e4e56"
+      ],
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
@@ -183,6 +217,7 @@
     "165120715322fdbd79",
     "1651208870b1d37cb3",
     "1651210093d43e3cb0",
-    "16512112457c44e114"
+    "16512112457c44e114",
+    "1651212571f328cb7b"
   ]
 }
