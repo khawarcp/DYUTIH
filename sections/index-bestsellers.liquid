@@ -1,0 +1,76 @@
+<section class="best-seller-sec">
+    <div class="container">
+        <div class="best-seller-top-text">
+            <div class="best-seller-title">
+                <h6> {{ section.settings.subheading }} </h6>
+                <h2>{{ section.settings.heading }}</h2>
+            </div>
+            <div class="about-btn">
+                {% if section.settings.button_url != blank and section.settings.button_text != blank  %}
+                <a href="{{ section.settings.button_url }}"><img src="{{ 'button-arrow.svg' | asset_url }}" loading="lazy" alt="Button Arrow">{{ section.settings.button_text }}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="best-seller-slider">
+        <div class="owl-carousel">
+            {% for product in collections[section.settings.collection].products %}
+                <div class="item">
+                    <div class="best-seller-col">
+                        <a href="{{ product.url }}" class="best-seller-img">
+                            <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+                        </a>
+                        <div class="best-seller-text">
+                            <h5>{{ product.title }}</h5>
+                            <span>{{ product.price | money }}</span>
+                            <a href="{{ product.url }}" class="bag-img">
+                                <img src="{{ 'bag-img.svg' | asset_url }}" alt="bag-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name" : "Best Sellers",
+   "settings": [
+     {
+         "type": "text",
+         "id": "heading",
+         "label": "Heading"
+     },
+     {
+         "type": "text",
+         "id": "subheading",
+         "label": "Subheading"
+     },
+   {
+       "type": "text",
+       "id": "button_text",
+       "label": "Button Text",
+       "default": "Shop Now"
+   },
+   {
+       "type": "url",
+       "id" : "button_url",
+         "label": "Button URL"
+   },
+   {
+       "type": "collection",
+       "id" : "collection",
+         "label": "Collection"
+   }
+   ],
+   "presets":[
+    {
+        "name": "Best Sellers Collection",
+        "category": "Custom Section"
+    }
+   ]
+}
+{% endschema %}
