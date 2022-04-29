@@ -8,3 +8,27 @@
         </div>
     </div>
 </section>
+
+
+{% schema %}
+{
+    "name" : "Richtext",
+   "settings": [
+            {
+                "id" : "title",
+            "type": "text",
+            "label": "Title"
+            },
+            {
+                "id" : "description",
+            "type": "textarea",
+            "label": "Description"
+            },
+            {
+                "id" : "image",
+            "type": "image_picker",
+            "label": "Image"
+            }
+   ],
+}
+{% endschema %}

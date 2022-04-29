@@ -1,22 +1,29 @@
 <section class="about-rows-sec">
     <div class="container">
-        
-        {% for block in section.blocks %}
         <div class="row">
             <div class="col-md-6">
                 <div class="mission-statement-img">
-                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="mission-statement">
+                    <img src="assets/images/dyutih-do-img1.png" alt="dyutih-do-img1">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="mission-statement-text">
-                    <h3> {{ block.settings.title }} </h3>
-                    <p> {{ block.settings.description }} </p>
+                    <p>DYUTiH skin care features exotic botanicals and rituals that discerning women have rendered indispensable for a lifetime of luminous, youthful-looking skin.   A modern alchemy of 100% all natural, organic ingredients (proven and newfound botanical actives) targets skin concerns using minimalist, high performance, organic formulations.</p>
                 </div>
             </div>
         </div>
-        {% endfor %}
- 
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mission-statement-img">
+                    <img src="assets/images/dyutih-do-img2.png" alt="dyutih-do-img2">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mission-statement-text">
+                    <p>The concentrated, botanically-focused collection marries with an efficacious delivery system for an exceptional, healthy-looking glow.  Indulgent skin care creams, lotions and elixirs help to improve skin tone and texture for visible short term and long term results. DYUTiH means beauty in Sanskrit.  Known as the “mother of all languages”, it is the oldest language in the world with an Indo-European origin.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
