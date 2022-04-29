@@ -1,35 +1,22 @@
 <section class="about-rows-sec">
     <div class="container">
+        
+        {% for block in section.blocks %}
         <div class="row">
             <div class="col-md-6">
                 <div class="mission-statement-img">
-                    <img src="assets/images/mission-statement.png" alt="mission-statement">
+                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="mission-statement">
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="mission-statement-text">
-                    <h3>MISSION <span>STATEMENT</span></h3>
-                    <p>Aiming to release your skin from impurities of life’s challenges, our products are formulated
-                        for each skin type in mind with a combination of organic materials. Our three R’s to infuse
-                        the skin’s barrier are replenish, refine, and renew, the Dyutih in you.</p>
+                    <h3> {{ block.settings.title }} </h3>
+                    <p> {{ block.settings.description }} </p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="mission-statement-img">
-                    <img src="assets/images/vision-statement.png" alt="vision-statement">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="mission-statement-text">
-                    <h3>VISION <span>STATEMENT</span></h3>
-                    <p>With your mind, body, and a simplistic beauty ritual in mind, we strive for you to have your
-                        inner beauty be reflected on your outward self each day, one droplet at a time. Take the
-                        time to rebuild your outer-glow, as self-care is now your new priority.</p>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
+ 
     </div>
 </section>
 
@@ -43,6 +30,7 @@
         {
             "name" : "Statement",
            "type": "Statement",
+           "limit" : 2,
            "settings": [
                {
                    "id" : "title",
