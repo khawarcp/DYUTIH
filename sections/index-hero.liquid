@@ -1,0 +1,66 @@
+<section class="dyutih-properties-sec">
+    <div class="dyutih-properties-main-img">
+        <img src="{{ section.settings.hero_image | img_url: 'master' }}" loading="lazy" alt="dyutih-properties-main-img">
+    </div>
+    <div class="dyutih-properties-main-row">
+        <div class="container">
+            <div class="row">
+                {% for block in section.blocks %}
+                    <div class="col-md-4">
+                        <div class="dyutih-pro-col">
+                            <div class="dyutih-pro-img">
+                                <img src="{{ block.settings.feature_image }}" loading="lazy" alt="dyutih-pro-img1">
+                            </div>
+                            <div class="dyutih-pro-text">
+                                <h4> {{ block.settings.heading }} </h4>
+                                <p> {{ block.settings.info }} </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name" : "Hero with features",
+   "settings": [
+        {
+            "type": "image_picker",
+            "id": "hero_image",
+            "label": "Hero Image"
+        }
+   ],
+   "blocks" : [
+        {
+           "type": "Featured_Product",
+           "name" : "Featured Product",
+          "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "feature_image",
+                    "label": "Feature Image"
+                },
+               {
+                   "type": "text",
+                   "id": "heading",
+                   "label": "Heading"
+               },
+              {
+                  "type": "textarea",
+                  "id": "info",
+                  "label": "Description"
+              }
+          ]
+        }
+   ],
+   "presets":[
+    {
+        "name": "Hero with features",
+        "category": "Custom Section"
+    }
+   ]
+}
+{% endschema %}
