@@ -38,11 +38,16 @@
     "about-hero": {
       "type": "about-hero",
       "settings": {
+        "title": "our <span>VALUES<\/span>",
+        "description": "Our ingredients will be guided and informed by our commitment to sustainable organic compounds that are safe and ethical.",
+        "image": "shopify:\/\/shop_images\/our-values-bg.png"
       }
     },
     "about-dyutih": {
       "type": "about-dyutih",
       "settings": {
+        "title": "",
+        "description": ""
       }
     },
     "about-statements2": {
