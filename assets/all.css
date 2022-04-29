@@ -462,6 +462,20 @@ details-modal.header__search svg#icon-search path {
     fill: #fff;
 }
 
+.header-style2 nav.header__inline-menu ul li a span {
+    color: #000;
+}
+
+header.header.header--middle-left.container.header--has-menu.header-style2 .header__icons.user-cart a svg path {
+    fill: #000;
+}
+
+.header-wrapper.color-background-1.gradient.header-wrapper--border-bottom {
+    background-color: #fff;
+    height: 70px;
+}
+
+
 
 .best-seller-sec .owl-thumbs {
     display: flex;
