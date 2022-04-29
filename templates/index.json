@@ -176,6 +176,7 @@
     },
     "1651215172c7eb96e1": {
       "type": "index-skin-basics",
+      "disabled": true,
       "settings": {
         "title": "DYUTiH Skin Care <span>Basics<\/span>",
         "collection_clenaser": "cleansers-toners",
