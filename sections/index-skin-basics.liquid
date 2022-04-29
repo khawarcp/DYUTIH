@@ -22,7 +22,7 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container">
                     <div class="row">
-                        {% for product in collections[section.settings.collection_clenaser].products %}
+                        {% for product in collection['cleansers-toners'].products limit : 3 %}
                         <div class="col-md-4">
                             <div class="skin-care-col">
                                 <div class="skin-care-img">
@@ -45,7 +45,7 @@
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="container">
                     <div class="row">
-                        {% for product in collections[section.settings.collection_glow].products %}
+                        {% for product in collections[section.settings.collection_glow].products limit : 3 %}
                         <div class="col-md-4">
                             <div class="skin-care-col">
                                 <div class="skin-care-img">
@@ -68,7 +68,7 @@
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                 <div class="container">
                     <div class="row">
-                        {% for product in collections[section.settings.collection_moisturizers].products %}
+                        {% for product in collections[section.settings.collection_moisturizers].products limit : 3 %}
                         <div class="col-md-4">
                             <div class="skin-care-col">
                                 <div class="skin-care-img">
