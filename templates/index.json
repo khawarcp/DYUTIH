@@ -136,6 +136,43 @@
       "settings": {
         "hero_image": "shopify:\/\/shop_images\/dyutih-properties-main-img.png"
       }
+    },
+    "16512112457c44e114": {
+      "type": "index-collections",
+      "blocks": {
+        "47e2c7ee-92fe-44de-9db4-ffb6fb33b902": {
+          "type": "Collection",
+          "settings": {
+            "collection": "cleansers-toners"
+          }
+        },
+        "ef2975d4-5a18-4d64-84ca-2d2e49fcb497": {
+          "type": "Collection",
+          "settings": {
+            "collection": "glow-boosting-elixirs"
+          }
+        },
+        "ef78efad-900c-4e68-bd66-0e09a075819d": {
+          "type": "Collection",
+          "settings": {
+            "collection": "skin-moisturizers"
+          }
+        },
+        "4c4ec9e5-a962-47ef-88a3-a331dd88a745": {
+          "type": "Collection",
+          "settings": {
+            "collection": "skin-renewing"
+          }
+        }
+      },
+      "block_order": [
+        "47e2c7ee-92fe-44de-9db4-ffb6fb33b902",
+        "ef2975d4-5a18-4d64-84ca-2d2e49fcb497",
+        "ef78efad-900c-4e68-bd66-0e09a075819d",
+        "4c4ec9e5-a962-47ef-88a3-a331dd88a745"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -145,6 +182,7 @@
     "1651207128302f6b75",
     "165120715322fdbd79",
     "1651208870b1d37cb3",
-    "1651210093d43e3cb0"
+    "1651210093d43e3cb0",
+    "16512112457c44e114"
   ]
 }
