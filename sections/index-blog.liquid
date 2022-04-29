@@ -1,12 +1,51 @@
+<section class="dyutih-blog-sec">
+  <div class="dyutih-blog-banner">
+      <img src="{{ section.settings.image | img_url: 'master' }}" alt="dyutih-blog-banner">
+  </div>
+  <div class="container">
+      <div class="dyutih-blog-content">
+          <div class="dyutih-blog-title">
+              <h2> {{ section.settings.heading }}  </h2>
+          </div>
+          <div class="custom-site-btn">
+              <a href="{{ section.settings.button_link }}"><img src="{{ 'button-arrow.svg' | asset_url }}" alt=""> {{ section.settings.button_text }} </a>
+          </div>
+      </div>
+  </div>
+</section>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Blog",
+    "settings": 
+    [
+       {
+         "type": "text",
+         "id": "heading",
+         "label": "Heading"
+       },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "text",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+    ],
+    "presets":[
+     {
+         "name": "Blog",
+         "category": "Custom Section"
+     }
+    ]
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
