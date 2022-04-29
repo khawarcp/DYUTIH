@@ -1,6 +1,6 @@
 <section class="dyutih-twosimg position-relative-sec">
     {% for block in section.blocks %}
-       {% assign product in all_products[block.settings.featured_product] %}
+       {% assign product in all_products[block.settings.product] %}
         <div class="dyutih-img-col">
             <img src="{{ product.featured_image | img_url: 'master' }}" loading = "lazy" alt="{{ product.title }}">
             <div class="dyutih-hover-product">
