@@ -937,7 +937,7 @@ footer {
     font-size: 11px;
     width: 112px;
     height: 42px;
-    background-image: url('../images/ellipse-border.png');
+    background-image: url('ellipse-border.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
