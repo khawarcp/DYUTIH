@@ -196,10 +196,46 @@
             "rating": 5,
             "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0642\/3828\/9152\/files\/testimonial-img-min.gif?v=1651225525"
           }
+        },
+        "1ed8641a-41dc-44ed-91c0-89e00098c2c2": {
+          "type": "Testimoinals",
+          "settings": {
+            "heading": "our customers <span>love<\/span> us",
+            "name": "Hazel",
+            "city": "los angeles",
+            "review": "My skin is so soft and smooth after using DYUTIH. The Replenshing Oat Milk Cleanser\n                                    has done wonders for my skin. It is my go-to-cleanser.",
+            "rating": 5,
+            "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0642\/3828\/9152\/files\/testimonial-img-min.gif?v=1651225525"
+          }
+        },
+        "50203687-069f-48d9-a1c6-61a24904611e": {
+          "type": "Testimoinals",
+          "settings": {
+            "heading": "our customers <span>love<\/span> us",
+            "name": "Hazel",
+            "city": "los angeles",
+            "review": "My skin is so soft and smooth after using DYUTIH. The Replenshing Oat Milk Cleanser\n                                    has done wonders for my skin. It is my go-to-cleanser.",
+            "rating": 5,
+            "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0642\/3828\/9152\/files\/testimonial-img-min.gif?v=1651225525"
+          }
+        },
+        "b33fa69f-8889-40b5-b018-f3f1d66fee82": {
+          "type": "Testimoinals",
+          "settings": {
+            "heading": "our customers <span>love<\/span> us",
+            "name": "Hazel",
+            "city": "los angeles",
+            "review": "My skin is so soft and smooth after using DYUTIH. The Replenshing Oat Milk Cleanser\n                                    has done wonders for my skin. It is my go-to-cleanser.",
+            "rating": 5,
+            "image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0642\/3828\/9152\/files\/testimonial-img-min.gif?v=1651225525"
+          }
         }
       },
       "block_order": [
-        "8829046d-c161-4c61-b75e-422e1f3cdbfb"
+        "8829046d-c161-4c61-b75e-422e1f3cdbfb",
+        "1ed8641a-41dc-44ed-91c0-89e00098c2c2",
+        "50203687-069f-48d9-a1c6-61a24904611e",
+        "b33fa69f-8889-40b5-b018-f3f1d66fee82"
       ],
       "settings": {
       }
