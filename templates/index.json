@@ -19,10 +19,34 @@
         "button_text": "About Us",
         "button_url": "#"
       }
+    },
+    "16512044410c658b5d": {
+      "type": "index-featured-products",
+      "blocks": {
+        "ec43f5dc-fca9-4a8a-898b-2c1a3670d56f": {
+          "type": "Featured_Product",
+          "settings": {
+            "featured_product": "purifying"
+          }
+        },
+        "058178fb-26d3-45e1-847e-20916f5f6d49": {
+          "type": "Featured_Product",
+          "settings": {
+            "featured_product": "replenishing"
+          }
+        }
+      },
+      "block_order": [
+        "ec43f5dc-fca9-4a8a-898b-2c1a3670d56f",
+        "058178fb-26d3-45e1-847e-20916f5f6d49"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "16511373708825c42e",
-    "16512038471387315c"
+    "16512038471387315c",
+    "16512044410c658b5d"
   ]
 }
