@@ -48,12 +48,36 @@
       "settings": {
         "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0642\/3828\/9152\/files\/4.mp4?v=1651207094"
       }
+    },
+    "165120715322fdbd79": {
+      "type": "index-featured-products",
+      "blocks": {
+        "f7ab90e3-74e9-4699-91a9-ae2691433359": {
+          "type": "Featured_Product",
+          "settings": {
+            "featured_product": "refining"
+          }
+        },
+        "6e867d0a-008a-4b04-b8b6-6ca6f857d4af": {
+          "type": "Featured_Product",
+          "settings": {
+            "featured_product": "glow-boosting"
+          }
+        }
+      },
+      "block_order": [
+        "f7ab90e3-74e9-4699-91a9-ae2691433359",
+        "6e867d0a-008a-4b04-b8b6-6ca6f857d4af"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "16511373708825c42e",
     "16512038471387315c",
     "16512044410c658b5d",
-    "1651207128302f6b75"
+    "1651207128302f6b75",
+    "165120715322fdbd79"
   ]
 }
