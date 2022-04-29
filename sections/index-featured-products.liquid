@@ -1,6 +1,7 @@
 <section class="dyutih-twosimg position-relative-sec">
     {% for block in section.blocks %}
-       {% assign product in all_products[block.settings.product] %}
+       {% assign products = all_products[block.settings.featured_product] %}
+       {% for product in products %}
         <div class="dyutih-img-col">
             <img src="{{ product.featured_image | img_url: 'master' }}" loading = "lazy" alt="{{ product.title }}">
             <div class="dyutih-hover-product">
@@ -9,6 +10,7 @@
                 <button><img src="{{ 'product-bag.svg' | asset_url }}" loading="lazy" alt="product-bag"></button>
             </div>
         </div>
+       {% endfor %}
     {% endfor %}
 </section>
 
