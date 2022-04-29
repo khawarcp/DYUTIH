@@ -173,6 +173,15 @@
       ],
       "settings": {
       }
+    },
+    "1651215172c7eb96e1": {
+      "type": "index-skin-basics",
+      "settings": {
+        "title": "DYUTiH Skin Care <span>Basics<\/span>",
+        "collection_clenaser": "cleansers-toners",
+        "collection_glow": "glow-boosting-elixirs",
+        "collection_moisturizers": "skin-moisturizers"
+      }
     }
   },
   "order": [
@@ -183,6 +192,7 @@
     "165120715322fdbd79",
     "1651208870b1d37cb3",
     "1651210093d43e3cb0",
-    "16512112457c44e114"
+    "16512112457c44e114",
+    "1651215172c7eb96e1"
   ]
 }
