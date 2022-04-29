@@ -71,6 +71,16 @@
       ],
       "settings": {
       }
+    },
+    "1651208870b1d37cb3": {
+      "type": "index-bestsellers",
+      "settings": {
+        "heading": "BEST <span>SELLERS<\/span>",
+        "subheading": "I DYUTIH, do you?",
+        "button_text": "View all",
+        "button_url": "#",
+        "collection": "best-seller"
+      }
     }
   },
   "order": [
@@ -78,6 +88,7 @@
     "16512038471387315c",
     "16512044410c658b5d",
     "1651207128302f6b75",
-    "165120715322fdbd79"
+    "165120715322fdbd79",
+    "1651208870b1d37cb3"
   ]
 }
