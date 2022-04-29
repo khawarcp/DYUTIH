@@ -8,7 +8,9 @@
               <h2> {{ section.settings.heading }}  </h2>
           </div>
           <div class="custom-site-btn">
+            {% if section.settings.button_link != blank and section.settings.button_text != blank %}
               <a href="{{ section.settings.button_link }}"><img src="{{ 'button-arrow.svg' | asset_url }}" alt=""> {{ section.settings.button_text }} </a>
+              {% endif %}
           </div>
       </div>
   </div>
@@ -35,7 +37,7 @@
           "label": "Button Text"
         },
         {
-          "type": "text",
+          "type": "url",
           "id": "button_link",
           "label": "Button Link"
         }
