@@ -1,0 +1,26 @@
+{
+    "sections": {
+      "page-banner": {
+        "type": "page-banner"
+      },
+      "about-statements": {
+        "type": "about-statements"
+      },
+      "about-hero": {
+        "type": "about-hero"
+      },
+      "about-dyutih": {
+        "type": "about-dyutih"
+      },
+      "about-statements2": {
+        "type": "about-statements2"
+      }
+    },
+    "order": [
+      "page-banner",
+        "about-statements",
+        "about-hero",
+        "about-dyutih",
+        "about-statements2"
+    ]
+  }
