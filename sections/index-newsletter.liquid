@@ -2,7 +2,7 @@
   <div class="container">
       <h3> {{ section.settings.heading }} </h3>
       <p>{{ section.settings.subheading }}</p>
-      {% form 'customer' %}
+      {% form 'customer', class: 'newsletter-form' %}
         
               <input type="hidden" name="contact[tags]" value="newsletter">
           <div class="newsletter-form">
@@ -11,6 +11,7 @@
                 id="NewsletterForm--{{ section.id }}"
                 type="email"
                 name="contact[email]"
+                class="field__input"
                 value="{{ form.email }}"
                 aria-required="true"
                 autocorrect="off"
@@ -28,14 +29,14 @@
               >
                   <input type="submit" value="subscribe">
               </div>
-              {%- if form.errors -%}
+              
+          </div>
+          {%- if form.errors -%}
               <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
             {%- endif -%}
             {%- if form.posted_successfully? -%}
             <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
           {%- endif -%}
-          </div>
-          
       {% endform %}
   </div>
 </section>
