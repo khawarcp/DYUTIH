@@ -1,0 +1,14 @@
+{
+    "sections":{
+        "page-banner" : {
+            "type" : "page-banner"
+        },
+        "skin-care-collection" : {
+            "type" : "skin-care-collection"
+        }
+    },
+    "order" :[
+        "page-banner",
+        "skin-care-collection"
+    ]
+}
