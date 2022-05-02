@@ -1,0 +1,14 @@
+{
+    "sections":{
+        "page-banner" : {
+            "type" : "page-banner"
+        },
+        "contact-form" : {
+            "type" : "contact-form"
+        }
+    },
+    "order" : [
+        "page-banner",
+        "contact-form"
+    ]
+}
