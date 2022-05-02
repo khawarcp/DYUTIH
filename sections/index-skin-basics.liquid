@@ -22,18 +22,19 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container">
                     <div class="row">
-                      {% for prod in collections[section.settings.collection_clenaser].products limit : 3 %}
+                      {{ product.metafields.my_fields.product_subtitle }}
+                      {% for product in collections[section.settings.collection_clenaser].products limit : 3 %}
                         <div class="col-md-4">
                             <div class="skin-care-col">
                                 <div class="skin-care-img">
                                     <img src="assets/images/skin-care-img1.png" alt="skin-care-img1">
                                 </div>
                                 <div class="skin-care-text">
-                                    <h3> {{ prod.title }} </h3>
+                                    <h3> {{ product.title }} </h3>
                                     <h4> {{ product.metafields.my_fields.product_subtitle }} </h4>
-                                    <p> {{ prod.description }} </p>
+                                    <p> {{ product.description }} </p>
                                     <div class="custom-site-btn">
-                                        <a href="{{ prod.url }}"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                        <a href="{{ product.url }}"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
                                     </div>
                                 </div>
                             </div>
