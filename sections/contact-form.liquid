@@ -1,31 +1,16 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <section class="get-in-touch-form-sec">
     <div class="container">
         <div class="get-in-touch">
            
             {%- if section.settings.heading != blank -%}
-            <h3 class="title title-wrapper--no-top-margin {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h3>
+            <h3 >{{ section.settings.heading  }}</h3>
             {%- else -%}
             <h3 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h3>
             {%- endif -%}
-            <p>If you need any assistance, please leave us a message by filling out thr form below and we will get
-                back to you. Thank you for supporting DYUTIH.</p>
+            <p> {{ section.settings.info }} </p>
 
             {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
                 {%- if form.posted_successfully? -%}

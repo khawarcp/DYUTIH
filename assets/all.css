@@ -869,9 +869,6 @@ footer {
     color: #231F20;
 }
 
-.f-contact-info br {
-}
-
 .f-social-links h5, .f-shop-links h5 {
     color: #AF612C;
     font-size: 16px;
@@ -1212,7 +1209,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     color: rgb(35 31 32 / 40%);
 }
 
-.input-container:nth-child(5), .input-container:nth-child(6) {
+.input-container:nth-child(7), .input-container:nth-child(8) {
     width: 100%;
 }
 
@@ -1378,9 +1375,6 @@ p.border-left-para {
 
 .product-detail-sec {
     padding: 40px 0px;
-}
-
-.main-header-flex {
 }
 
 header.header-style2 .main-header-flex {
@@ -2195,10 +2189,6 @@ input[type=number] {
         margin-top: 30px;
     }
 
-    .clean-botanical-properties .clean-botanical-properties-row {
-        /* flex-direction: column-reverse; */
-    }
-
     .clean-botanical-actives .row {
         flex-direction: column-reverse;
     }
@@ -2221,8 +2211,6 @@ input[type=number] {
         padding-left: 0px;
     }
 
-    .home-banner {
-    }
 
     .ingredient-listing ul li {
         width: 100%;
