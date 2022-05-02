@@ -1,5 +1,13 @@
 {
   "sections": {
+    "1651484031f20bd36d": {
+      "type": "page-banner",
+      "settings": {
+        "back_image": "shopify:\/\/shop_images\/about-banner_b591f2f3-fbc3-42a2-9a97-e74fb1ffce8c.png",
+        "heading": "Latest from the news",
+        "subheading": "DYUTIH Organics"
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -14,6 +22,7 @@
     }
   },
   "order": [
+    "1651484031f20bd36d",
     "main"
   ]
 }
