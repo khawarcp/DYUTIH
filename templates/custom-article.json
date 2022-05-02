@@ -1,0 +1,14 @@
+{
+    "sections" :{
+        "article-banner" : {
+            "type" :"artcile-banner"
+        },
+        "article-content" :{
+            "type" : "article-content"
+        }
+    },
+    "order" :[
+        "article-banner",
+        "article-content"
+    ]
+}
