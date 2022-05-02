@@ -11,7 +11,7 @@
     "contact-form": {
       "type": "contact-form",
       "settings": {
-        "heading": "Contact form",
+        "heading": "Send us A <span>Message<\/span>",
         "heading_size": "h1",
         "info": "If you need any assistance, please leave us a message by filling out thr form below and we will get\n                back to you. Thank you for supporting DYUTIH.",
         "color_scheme": "background-1"
