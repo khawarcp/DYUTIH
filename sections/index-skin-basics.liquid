@@ -25,12 +25,11 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="container">
                     <div class="row">
-                      {% for product in collections[section.settings.collection_clenaser].products limit : 3 %}
-                     
+                      {% for product in collections[section.settings.collection_clenaser].products limit : 3 %}                     
                         <div class="col-md-4">
                             <div class="skin-care-col">
                                 <div class="skin-care-img">
-                                    <img src="assets/images/skin-care-img1.png" alt="skin-care-img1">
+                                    <img src="{{ product.featured_image | img_url : "master" }}" alt="{{ product.title }}">
                                 </div>
                                 <div class="skin-care-text">
                                     <h3> {{ product.title }} </h3>
