@@ -1209,7 +1209,11 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     color: rgb(35 31 32 / 40%);
 }
 
-.input-container.width-100 {
+/* .input-container :nth-child(6), .input-container:nth-child(6) {
+    width: 100%;
+} */
+
+.input-container.width-100{
     width: 100%;
 }
 
