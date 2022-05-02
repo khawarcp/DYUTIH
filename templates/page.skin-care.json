@@ -1,14 +1,21 @@
 {
-    "sections":{
-        "page-banner" : {
-            "type" : "page-banner"
-        },
-        "skin-care-collection" : {
-            "type" : "skin-care-collection"
-        }
+  "sections": {
+    "page-banner": {
+      "type": "page-banner",
+      "settings": {
+        "back_image": "shopify:\/\/shop_images\/about-banner_b591f2f3-fbc3-42a2-9a97-e74fb1ffce8c.png",
+        "heading": "Skin Care kits",
+        "subheading": "DYUTIH Organics"
+      }
     },
-    "order" :[
-        "page-banner",
-        "skin-care-collection"
-    ]
+    "skin-care-collection": {
+      "type": "skin-care-collection",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "page-banner",
+    "skin-care-collection"
+  ]
 }
