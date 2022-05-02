@@ -10,6 +10,31 @@
     },
     "skin-care-collection": {
       "type": "skin-care-collection",
+      "blocks": {
+        "91f44a65-933a-4381-8667-f78a63d76a02": {
+          "type": "skin-care-collection",
+          "settings": {
+            "collection": "dyutih-luxury-span-cleansing-collection-span"
+          }
+        },
+        "c0560f9d-7202-43ab-b6ec-9c9565a65c13": {
+          "type": "skin-care-collection",
+          "settings": {
+            "collection": "the-glow-boosting-collection-kit-highlighhts-dyutihs-targeted-skin-care-treatments-that-help-to-boost-skin-radiance-for-a-smoother-softer-glowing-complexion"
+          }
+        },
+        "e877e3cf-5404-42fa-81f1-cda343944e0a": {
+          "type": "skin-care-collection",
+          "settings": {
+            "collection": "dyutih-glow-boosting-span-collection-span"
+          }
+        }
+      },
+      "block_order": [
+        "91f44a65-933a-4381-8667-f78a63d76a02",
+        "c0560f9d-7202-43ab-b6ec-9c9565a65c13",
+        "e877e3cf-5404-42fa-81f1-cda343944e0a"
+      ],
       "settings": {
       }
     }
