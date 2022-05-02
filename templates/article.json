@@ -1,16 +1,18 @@
 {
-  "sections" :{
-      "article-banner" : {
-          "type" :"artcile-banner"
-      },
-      "article-content" :{
-          "type" : "article-content"
+  "sections": {
+    "article-banner": {
+      "type": "artcile-banner",
+      "settings": {
       }
+    },
+    "article-content": {
+      "type": "article-content",
+      "settings": {
+      }
+    }
   },
-  "order" :[
-      "article-banner",
-      "article-content"
+  "order": [
+    "article-banner",
+    "article-content"
   ]
 }
-
-
