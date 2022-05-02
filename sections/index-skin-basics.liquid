@@ -1,5 +1,8 @@
 <section class="dyutih-skin-care-sec">
     <h2> {{ section.settings.title }} </h2>
+  {% for product in collections[section.settings.collection_clenaser].products limit : 3 %}
+  <h1> {{ product.title }}</h1>
+      {% endfor %}
     <div class="dyutih-skin-care-tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -23,7 +26,7 @@
                 <div class="container">
                     <div class="row">
                       {% for product in collections[section.settings.collection_clenaser].products limit : 3 %}
-                      {% render 'card-product' %}
+                     
                         <div class="col-md-4">
                             <div class="skin-care-col">
                                 <div class="skin-care-img">
