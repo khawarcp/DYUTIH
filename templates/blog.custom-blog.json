@@ -11,6 +11,9 @@
     "custom-article-card": {
       "type": "custom-article-card",
       "settings": {
+        "layout": "collage",
+        "show_date": true,
+        "show_author": true
       }
     }
   },
