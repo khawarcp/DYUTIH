@@ -1,14 +1,21 @@
 {
-    "sections" : {
-        "page-banner" :{
-            "type" : "page-banner"
-        },
-        "custom-article-card" :{
-            "type" : "custom-article-card"
-        }
+  "sections": {
+    "page-banner": {
+      "type": "page-banner",
+      "settings": {
+        "back_image": "shopify:\/\/shop_images\/about-banner_b591f2f3-fbc3-42a2-9a97-e74fb1ffce8c.png",
+        "heading": "Latest from the news",
+        "subheading": "DYUTIH Organics"
+      }
     },
-    "order" : [
-        "page-banner",
-        "custom-article-card"
-    ]
+    "custom-article-card": {
+      "type": "custom-article-card",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "page-banner",
+    "custom-article-card"
+  ]
 }
