@@ -1,0 +1,14 @@
+{
+    "sections" : {
+        "page-banner" :{
+            "type" : "page-banner"
+        },
+        "custom-article-card" :{
+            "type" : "custom-article-card"
+        }
+    },
+    "order" : [
+        "page-banner",
+        "custom-article-card"
+    ]
+}
