@@ -37,15 +37,16 @@
             "show_dynamic_checkout": false
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Share"
+          }
+        },
+        "7f40a7f2-47d2-4d95-8d34-c96f262888ee": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ product.metafields.my_fields.secondary_description }}"
           }
         }
       },
@@ -56,8 +57,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "share",
+        "7f40a7f2-47d2-4d95-8d34-c96f262888ee"
       ],
       "settings": {
         "enable_sticky_info": false,
