@@ -83,7 +83,6 @@
     {%- endif -%}
 
     <div class="product-grid-container{% if section.settings.filter_type == 'vertical' and section.settings.collapse_on_larger_devices %} product-grid-container-vertical{% endif %}" id="ProductGridContainer">
-      {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
@@ -121,13 +120,201 @@
                 </li>
               {%- endfor -%}
             </ul>
-    
-            {%- if paginate.pages > 1 -%}
-              {% render 'pagination', paginate: paginate, anchor: '' %}
-            {%- endif -%}
+            <section id="product-grid" data-id="{{ section.id }}" class="shop-dyutih-skin-care-sec dyutih-skin-care-sec">
+              <div class="dyutih-skin-care-tabs">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="all-products-tab" data-bs-toggle="tab" data-bs-target="#all-products"
+                              type="button" role="tab" aria-controls="all-products" aria-selected="true">All</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                              type="button" role="tab" aria-controls="home" aria-selected="true">Cleansers + Toners</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                              type="button" role="tab" aria-controls="profile" aria-selected="false">Glow Boosting
+                              Elixirs</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                              type="button" role="tab" aria-controls="contact" aria-selected="false">Skin Quenching
+                              Moisturizers</button>
+                      </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+      
+                      <div class="tab-pane fade show active" id="all-products" role="tabpanel" aria-labelledby="all-products-tab">
+                          <div class="container">
+                              <div class="row">
+                                {% for product in collection.all.products %}
+                                  <div class="col-md-4">
+                                      <div class="skin-care-col">
+                                          <div class="skin-care-img">
+                                            <img src="{{ product.featured_image | img_url: 'master' }}" loading = "lazy" alt="{{ product.title }}">
+                                          </div>
+                                          <div class="skin-care-text">
+                                            <h3> {{ product.title }} </h3>
+                                            <h4> {{ product.metafields.my_fields.product_subtitle }} </h4>
+                                            <p> {{ product.description | split: '.' | first  }} </p>
+                                              <div class="custom-site-btn">
+                                                  <a href="{{ product.url }}"><img src="{{ 'button-arrow.svg' | asset_url }}" alt="">SHOP NOW </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  {% endfor %}
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane fade show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <div class="skin-care-col">
+                                          <div class="skin-care-img">
+                                              <img src="assets/images/skin-care-img1.png" alt="skin-care-img1">
+                                          </div>
+                                          <div class="skin-care-text">
+                                              <h3>PURIFYING</h3>
+                                              <h4>Coconut Gel Cleanser</h4>
+                                              <p>This unique Coconut Gel Cleanser features moisturizing Coconut Oil and Aloe
+                                                  Vera to help gently cleanse the face, body and hair without drying.</p>
+                                              <div class="custom-site-btn">
+                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="skin-care-col">
+                                          <div class="skin-care-img">
+                                              <img src="assets/images/skin-care-img2.png" alt="skin-care-img2">
+                                          </div>
+                                          <div class="skin-care-text">
+                                              <h3>REFINING</h3>
+                                              <h4>White Willow pH Toner</h4>
+                                              <p>Enriched with moisturizing and antioxidant ingredients, it helps to gently
+                                                  restore the skin’s pH level for softer, more supple skin.</p>
+                                              <div class="custom-site-btn">
+                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="skin-care-col">
+                                          <div class="skin-care-img">
+                                              <img src="assets/images/skin-care-img3.png" alt="skin-care-img3">
+                                          </div>
+                                          <div class="skin-care-text">
+                                              <h3>Replenishing</h3>
+                                              <h4>oat milk Cleanser</h4>
+                                              <p>Rich and gentle oat milk cleanser thoroughly cleanses the face, neck,
+                                                  décolleté and eye contour area without drying.</p>
+                                              <div class="custom-site-btn">
+                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <div class="skin-care-col">
+                                          <div class="skin-care-img">
+                                              <img src="assets/images/skin-care-img4.png" alt="skin-care-img4">
+                                          </div>
+                                          <div class="skin-care-text">
+                                              <h3>glow boosting</h3>
+                                              <h4>bamboo exfoliating scrub</h4>
+                                              <p>Its formula is derived from absorbent bamboo silica and coconut extract, to remove dead cells and impurities from the skin.</p>
+                                              <div class="custom-site-btn">
+                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="skin-care-col">
+                                          <div class="skin-care-img">
+                                              <img src="assets/images/skin-care-img5.png" alt="skin-care-img5">
+                                          </div>
+                                          <div class="skin-care-text">
+                                              <h3>ultra glow boosting</h3>
+                                              <h4>vitamin c + lotus flower serum</h4>
+                                              <p>Lightweight, brightening serum helps to smooth fine lines and/or wrinkles and minimize the appearance of pigmentation spots.</p>
+                                              <div class="custom-site-btn">
+                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="skin-care-col">
+                                          <div class="skin-care-img">
+                                              <img src="assets/images/skin-care-img6.png" alt="skin-care-img6">
+                                          </div>
+                                          <div class="skin-care-text">
+                                              <h3>radiance boosting</h3>
+                                              <h4>avocado face oil</h4>
+                                              <p>This essential facial treatment features Avocado oil that assists in regenerating the skin’s protective barrier and restore its hydration.</p>
+                                              <div class="custom-site-btn">
+                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <div class="skin-care-col">
+                                          <div class="skin-care-img">
+                                              <img src="assets/images/skin-care-img7.png" alt="skin-care-img7">
+                                          </div>
+                                          <div class="skin-care-text">
+                                              <h3>skin renewing</h3>
+                                              <h4>regenerating moisturizer</h4>
+                                              <p>This unique Coconut Gel Cleanser features moisturizing Coconut Oil and Aloe Vera to help gently cleanse the face, body and hair without drying.</p>
+                                              <div class="custom-site-btn">
+                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <div class="skin-care-col">
+                                          <div class="skin-care-img">
+                                              <img src="assets/images/skin-care-img8.png" alt="skin-care-img8">
+                                          </div>
+                                          <div class="skin-care-text">
+                                              <h3>reyecovery</h3>
+                                              <h4>multi-action eye countour cream</h4>
+                                              <p>Enriched with moisturizing and antioxidant ingredients, it helps to gently restore the skin’s pH level for softer, more supple skin.</p>
+                                              <div class="custom-site-btn">
+                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
           </div>
         {%- endif -%}
-      {%- endpaginate -%}
+
     </div>
   </div>
 </div>
@@ -146,15 +333,6 @@
       "step": 4,
       "default": 16,
       "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
-    },
-    {
-      "type": "range",
-      "id": "columns_desktop",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "default": 4,
-      "label": "t:sections.main-collection-product-grid.settings.columns_desktop.label"
     },
     {
       "type": "header",
@@ -246,46 +424,6 @@
     {
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header_mobile.content"
-    },
-    {
-      "type": "select",
-      "id": "columns_mobile",
-      "default": "2",
-      "label": "t:sections.main-collection-product-grid.settings.columns_mobile.label",
-      "options": [
-        {
-          "value": "1",
-          "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__1.label"
-        },
-        {
-          "value": "2",
-          "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__2.label"
-        }
-      ]
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
     }
   ]
 }
