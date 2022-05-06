@@ -1,0 +1,71 @@
+<section class="clean-botanical-properties">
+    <div class="container">
+        <div class="row clean-botanical-properties-row">
+            <div class="col-md-6">
+                <div class="clean-botanical-pro-imgs">
+                    <img src="{{ section.settings.image_1 | img_url: 'master' }}" loading="lazy" alt="clean-botanical-pro-img1"
+                        class="clean-botanical-pro-img1">
+                    <img src="{{ section.settings.image_2 | img_url: 'master' }}" loading="lazy" alt="clean-botanical-pro-img2"
+                        class="clean-botanical-pro-img2">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="clean-botanical-pro-list">
+                    <div class="row">
+                        {% for block in seciton.blocks %}
+                        <div class="col-md-6">
+                            <div class="botanical-pro-list-col">
+                                <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy" alt="hand-cream">
+                                <h5> {{ block.settings.title }} </h5>
+                                <p>{{ block.settings.info }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name" : "Botanical Properties",
+   "settings": [
+      {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+      },
+     {
+         "type": "image_picker",
+         "id": "image_2",
+         "label": "Image 2"
+     }
+   ],
+   "blocks":[
+     {
+         "name" : "Property",
+            "type" : "Property",
+            "settings" : [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "text",
+                    "id": "info",
+                    "label": "Info"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }
+            ]
+     }
+   ]
+}
+{% endschema %}

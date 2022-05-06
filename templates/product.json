@@ -120,6 +120,10 @@
         "image": "shopify:\/\/shop_images\/clean-botanical-img.png"
       }
     },
+    "product-botanical-properties" :
+    {
+      "type": "product-botanical-properties"
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -142,6 +146,7 @@
   "order": [
     "main",
     "product-biotonical-activites",
+    "product-botanical-properties",
     "product-recommendations"
   ]
 }
