@@ -153,6 +153,9 @@
         "image_2": "shopify:\/\/shop_images\/clean-botanical-pro-img2.png"
       }
     },
+    "product-parallex-video":{
+      "type": "product-parallex-video"
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -176,6 +179,7 @@
     "main",
     "product-biotonical-activites",
     "product-botanical-properties",
+    "product-parallex-video",
     "product-recommendations"
   ]
 }
