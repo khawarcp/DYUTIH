@@ -13,13 +13,13 @@
       "settings": {
         "products_per_page": 16,
         "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": true,
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
         "enable_quick_add": false,
-        "enable_filtering": true,
+        "enable_filtering": false,
         "filter_type": "horizontal",
-        "enable_sorting": true,
+        "enable_sorting": false,
         "collection_clenaser": "cleansers-toners",
         "collection_glow": "glow-boosting-elixirs",
         "collection_moisturizers": "skin-moisturizers"
