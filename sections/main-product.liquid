@@ -193,7 +193,7 @@
       </media-gallery>
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
-      <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
+      <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %} product-detail-text">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
         {%- for block in section.blocks -%}
@@ -205,14 +205,11 @@
               {{- block.settings.text -}}
             </p>
           {%- when 'title' -%}
-            <div class="product__title" {{ block.shopify_attributes }}>
-              <h1>{{ product.title | escape }}</h1>
-              <a href="{{ product.url }}" class="product__title">
-                <h2 class="h1">
-                  {{ product.title | escape }}
-                </h2>
-              </a>
+            <div {{ block.shopify_attributes }}>
+            <h2>{{ product.title | escape }}</h2>
+            <h4>{{ product.metafields.my_fields.product_subtitle }}</h4>
             </div>
+            
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
@@ -285,6 +282,38 @@
                 </button>
               </quantity-input>
             </div>
+          {%- when 'custom_description' -%}  
+            <div class="cus-description">
+              <p>DYUTIH Organics PURIFYING Coconut Gel Cleanser features moisturizing Coconut Oil and Aloe
+                  Vera to help gently cleanse the face, body and hair without drying.</p>
+              <p class="description-color">Use daily for face, body and hair to help instantly hydrate and
+                  nourish.</p>
+              <div class="quantity-cart-btn">
+                  <div class="quantity-number">
+                      <button class="qtyminus" aria-hidden="true">&minus;</button>
+                      <input type="number" name="qty" id="qty" min="1" max="10" step="1" value="1">
+                      <button class="qtyplus" aria-hidden="true">&plus;</button>
+                  </div>
+                  <div class="add-to-cart-btn">
+                      <button><img src="assets/images/button-arrow.svg" alt="">ADD TO CART</button>
+                  </div>
+              </div>
+              <div class="benfits-tips">
+                  <h4>Benefits:</h4>
+                  <p>Help to eliminate all traces of makeup, dirt and impurities from the skin Nourishes
+                      and hydrates skin for a silky finish.</p>
+                  <h4>Tips:</h4>
+                  <p>Use daily for face, body and hair to help instantly hydrate and nourish.</p>
+              </div>
+              <div class="share-blogs share-product">
+                  <h5>Share:</h5>
+                  <ul>
+                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  </ul>
+              </div>
+          </div>
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden quick-add-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
@@ -961,6 +990,32 @@
       ]
     },
     {
+      "type": "custom_description",
+      "name" : "Custom Description",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "secondary_description",
+          "label": "Secondary Description"
+        },
+        {
+          "type": "text",
+          "id": "focus_tagline",
+          "label": "Color Focus Tagline"
+        },
+       {
+         "type": "textarea",
+         "id": "benefits",
+         "label": "Benefits"
+       },
+      {
+        "type": "textarea",
+        "id": "tips",
+        "label": "Tips"
+      }
+      ]
+    },
+    {
       "type": "popup",
       "name": "t:sections.main-product.blocks.popup.name",
       "settings": [
@@ -1070,6 +1125,7 @@
       "default": false,
       "label": "t:sections.main-product.settings.enable_video_looping.label"
     },
+
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
