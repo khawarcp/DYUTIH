@@ -1,7 +1,40 @@
+<div class="empty-div"></div>
+<section class="shop-banner">
+    <div class="shop-banner-img">
+        <img src="{{ section.settings.banner | img_url: 'master' }}" alt="shop-banner">
+    </div>
+</section>
+<section class="shop-about-dyutih about-dyutih-sec">
+    <div class="container">
+        <div class="about-text">
+            <h2> {{ section.settings.title }} </h2>
+            <p> {{ section.settings.info }} </p>
+        </div>
+    </div>
+</section>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Banner with text",
+    "settings": 
+    [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "DYUTIH <span>/•DO-TEA/</span>"
+        },
+        {
+          "type": "richtext",
+          "id": "info",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "banner",
+          "label": "Banner"
+        }
+    ]
   }
 {% endschema %}
 
