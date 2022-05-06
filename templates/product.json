@@ -34,26 +34,6 @@
           "settings": {
             "picker_type": "button"
           }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "disabled": true,
-          "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -61,10 +41,7 @@
         "caption",
         "price",
         "327703db-7363-4b46-8d34-01f4a0bf1bea",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "share"
+        "variant_picker"
       ],
       "settings": {
         "enable_sticky_info": false,
@@ -120,9 +97,61 @@
         "image": "shopify:\/\/shop_images\/clean-botanical-img.png"
       }
     },
-    "product-botanical-properties" :
-    {
-      "type": "product-botanical-properties"
+    "product-botanical-properties": {
+      "type": "product-botanical-properties",
+      "blocks": {
+        "945e42ef-0789-44bb-ab40-afbada4e1c9d": {
+          "type": "Property",
+          "settings": {
+            "title": "Organic Ingredients",
+            "info": "Made with Organically Farmed Ingredients",
+            "image": "shopify:\/\/shop_images\/bowl.png"
+          }
+        },
+        "af765db2-f2c8-4548-8225-8acb7bb29967": {
+          "type": "Property",
+          "settings": {
+            "title": "Clean Beauty",
+            "info": "Free of GMO’s & Other Harsh Ingredients",
+            "image": "shopify:\/\/shop_images\/hand-cream.png"
+          }
+        },
+        "74260796-e874-4081-9300-3bfe6eecc410": {
+          "type": "Property",
+          "settings": {
+            "title": "Plant-Based",
+            "info": "Made with the Power of Natural, Plant Actives",
+            "image": "shopify:\/\/shop_images\/leaves.png"
+          }
+        },
+        "7e25cf6a-dff2-486a-ba1b-ab7551142441": {
+          "type": "Property",
+          "settings": {
+            "title": "Vegan",
+            "info": "100% Free from Animal By-Products",
+            "image": "shopify:\/\/shop_images\/plant-based.png"
+          }
+        },
+        "59b8d2a5-89dd-48a0-87e1-b43cff9ad271": {
+          "type": "Property",
+          "settings": {
+            "title": "Cruelty-Free",
+            "info": "Never Tested on Animals",
+            "image": "shopify:\/\/shop_images\/cruelty-free.png"
+          }
+        }
+      },
+      "block_order": [
+        "945e42ef-0789-44bb-ab40-afbada4e1c9d",
+        "af765db2-f2c8-4548-8225-8acb7bb29967",
+        "74260796-e874-4081-9300-3bfe6eecc410",
+        "7e25cf6a-dff2-486a-ba1b-ab7551142441",
+        "59b8d2a5-89dd-48a0-87e1-b43cff9ad271"
+      ],
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/clean-botanical-pro-img1.png",
+        "image_2": "shopify:\/\/shop_images\/clean-botanical-pro-img2.png"
+      }
     },
     "product-recommendations": {
       "type": "product-recommendations",
