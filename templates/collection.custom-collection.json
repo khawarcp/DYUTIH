@@ -17,9 +17,9 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
-        "enable_filtering": false,
+        "enable_filtering": true,
         "filter_type": "horizontal",
-        "enable_sorting": false,
+        "enable_sorting": true,
         "collection_clenaser": "cleansers-toners",
         "collection_glow": "glow-boosting-elixirs",
         "collection_moisturizers": "skin-moisturizers"
