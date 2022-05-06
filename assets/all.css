@@ -332,7 +332,7 @@ header {
 
 .dyutih-img-col img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .home-banner.home-parallex-video::before {
@@ -1696,6 +1696,21 @@ input[type=number] {
 }
 .header-style2 header.header.header--middle-left.container.header--has-menu {/* height: 70px; */position: relative;}
 
+.header__icon--cart span {
+    color: #fff;
+}
+
+.cart-count-bubble {
+    background-color: #af272f;
+}
+details[open] .modal-overlay:after {
+    display: none;
+}
+
+.best-seller-sec .container {
+    max-width: 82.5vw;
+    margin-left: auto;
+}
 /***************************
      
     ||  Media Query ||
@@ -2249,4 +2264,23 @@ input[type=number] {
     .skin-care-kits .row {
         margin-bottom: 0px;
     }
+  header.header.header--middle-left {
+    padding: 12px 15px;
+}
+
+.no-js details[open]>.menu-drawer, .js details[open].menu-opening>.menu-drawer, details[open].menu-opening>.menu-drawer__submenu {
+}
+
+.about-banner-text h2, .home-text-title h1 {
+    word-spacing: 4px;
+}
+
+header.header.header--middle-left path {
+    color: #fff !important;
+}
+
+.home-text {
+    z-index: 2;
+}
+
 }
