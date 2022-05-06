@@ -12,21 +12,8 @@
 {%- endif -%}
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
-<div class="section-{{ section.id }}-padding">
+<div>
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
     <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
@@ -147,141 +134,69 @@
                       <div class="tab-pane fade show" id="home" role="tabpanel" aria-labelledby="home-tab">
                           <div class="container">
                               <div class="row">
-                                  <div class="col-md-4">
-                                      <div class="skin-care-col">
-                                          <div class="skin-care-img">
-                                              <img src="assets/images/skin-care-img1.png" alt="skin-care-img1">
-                                          </div>
-                                          <div class="skin-care-text">
-                                              <h3>PURIFYING</h3>
-                                              <h4>Coconut Gel Cleanser</h4>
-                                              <p>This unique Coconut Gel Cleanser features moisturizing Coconut Oil and Aloe
-                                                  Vera to help gently cleanse the face, body and hair without drying.</p>
-                                              <div class="custom-site-btn">
-                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4">
-                                      <div class="skin-care-col">
-                                          <div class="skin-care-img">
-                                              <img src="assets/images/skin-care-img2.png" alt="skin-care-img2">
-                                          </div>
-                                          <div class="skin-care-text">
-                                              <h3>REFINING</h3>
-                                              <h4>White Willow pH Toner</h4>
-                                              <p>Enriched with moisturizing and antioxidant ingredients, it helps to gently
-                                                  restore the skin’s pH level for softer, more supple skin.</p>
-                                              <div class="custom-site-btn">
-                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4">
-                                      <div class="skin-care-col">
-                                          <div class="skin-care-img">
-                                              <img src="assets/images/skin-care-img3.png" alt="skin-care-img3">
-                                          </div>
-                                          <div class="skin-care-text">
-                                              <h3>Replenishing</h3>
-                                              <h4>oat milk Cleanser</h4>
-                                              <p>Rich and gentle oat milk cleanser thoroughly cleanses the face, neck,
-                                                  décolleté and eye contour area without drying.</p>
-                                              <div class="custom-site-btn">
-                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
+                                {% for product in collections[section.settings.collection_clenaser].products limit : 3 %}                     
+                                <div class="col-md-4">
+                                    <div class="skin-care-col">
+                                        <div class="skin-care-img">
+                                            <img src="{{ product.featured_image | img_url : "master" }}" loading="lazy" alt="{{ product.title }}">
+                                        </div>
+                                        <div class="skin-care-text">
+                                            <h3> {{ product.title }} </h3>
+                                            <h4> {{ product.metafields.my_fields.product_subtitle }} </h4>
+                                            <p> {{ product.description | split: '.' | first }} </p>
+                                            <div class="custom-site-btn">
+                                                <a href="{{ product.url }}"><img src="{{ 'button-arrow.svg' | asset_img_url }}" alt="">SHOP NOW </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              {% endfor %}
                               </div>
                           </div>
                       </div>
                       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                           <div class="container">
                               <div class="row">
-                                  <div class="col-md-4">
-                                      <div class="skin-care-col">
-                                          <div class="skin-care-img">
-                                              <img src="assets/images/skin-care-img4.png" alt="skin-care-img4">
-                                          </div>
-                                          <div class="skin-care-text">
-                                              <h3>glow boosting</h3>
-                                              <h4>bamboo exfoliating scrub</h4>
-                                              <p>Its formula is derived from absorbent bamboo silica and coconut extract, to remove dead cells and impurities from the skin.</p>
-                                              <div class="custom-site-btn">
-                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4">
-                                      <div class="skin-care-col">
-                                          <div class="skin-care-img">
-                                              <img src="assets/images/skin-care-img5.png" alt="skin-care-img5">
-                                          </div>
-                                          <div class="skin-care-text">
-                                              <h3>ultra glow boosting</h3>
-                                              <h4>vitamin c + lotus flower serum</h4>
-                                              <p>Lightweight, brightening serum helps to smooth fine lines and/or wrinkles and minimize the appearance of pigmentation spots.</p>
-                                              <div class="custom-site-btn">
-                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4">
-                                      <div class="skin-care-col">
-                                          <div class="skin-care-img">
-                                              <img src="assets/images/skin-care-img6.png" alt="skin-care-img6">
-                                          </div>
-                                          <div class="skin-care-text">
-                                              <h3>radiance boosting</h3>
-                                              <h4>avocado face oil</h4>
-                                              <p>This essential facial treatment features Avocado oil that assists in regenerating the skin’s protective barrier and restore its hydration.</p>
-                                              <div class="custom-site-btn">
-                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
+                                {% for product in collections[section.settings.collection_glow].products limit : 3 %}                     
+                                <div class="col-md-4">
+                                    <div class="skin-care-col">
+                                        <div class="skin-care-img">
+                                            <img src="{{ product.featured_image | img_url : "master" }}" loading="lazy" alt="{{ product.title }}">
+                                        </div>
+                                        <div class="skin-care-text">
+                                            <h3> {{ product.title }} </h3>
+                                            <h4> {{ product.metafields.my_fields.product_subtitle }} </h4>
+                                            <p> {{ product.description | split: '.' | first }} </p>
+                                            <div class="custom-site-btn">
+                                                <a href="{{ product.url }}"><img src="{{ 'button-arrow.svg' | asset_img_url }}" alt="">SHOP NOW </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              {% endfor %}
                               </div>
                           </div>
                       </div>
                       <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                           <div class="container">
                               <div class="row">
-                                  <div class="col-md-4">
-                                      <div class="skin-care-col">
-                                          <div class="skin-care-img">
-                                              <img src="assets/images/skin-care-img7.png" alt="skin-care-img7">
-                                          </div>
-                                          <div class="skin-care-text">
-                                              <h3>skin renewing</h3>
-                                              <h4>regenerating moisturizer</h4>
-                                              <p>This unique Coconut Gel Cleanser features moisturizing Coconut Oil and Aloe Vera to help gently cleanse the face, body and hair without drying.</p>
-                                              <div class="custom-site-btn">
-                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-4">
-                                      <div class="skin-care-col">
-                                          <div class="skin-care-img">
-                                              <img src="assets/images/skin-care-img8.png" alt="skin-care-img8">
-                                          </div>
-                                          <div class="skin-care-text">
-                                              <h3>reyecovery</h3>
-                                              <h4>multi-action eye countour cream</h4>
-                                              <p>Enriched with moisturizing and antioxidant ingredients, it helps to gently restore the skin’s pH level for softer, more supple skin.</p>
-                                              <div class="custom-site-btn">
-                                                  <a href="#"><img src="assets/images/button-arrow.svg" alt="">SHOP NOW </a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
+                                {% for product in collections[section.settings.collection_moisturizers].products limit : 3 %}                     
+                                <div class="col-md-4">
+                                    <div class="skin-care-col">
+                                        <div class="skin-care-img">
+                                            <img src="{{ product.featured_image | img_url : "master" }}" loading="lazy" alt="{{ product.title }}">
+                                        </div>
+                                        <div class="skin-care-text">
+                                            <h3> {{ product.title }} </h3>
+                                            <h4> {{ product.metafields.my_fields.product_subtitle }} </h4>
+                                            <p> {{ product.description | split: '.' | first }} </p>
+                                            <div class="custom-site-btn">
+                                                <a href="{{ product.url }}"><img src="{{ 'button-arrow.svg' | asset_img_url }}" alt="">SHOP NOW </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              {% endfor %}
                               </div>
                           </div>
                       </div>
@@ -399,8 +314,19 @@
       "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
     },
     {
-      "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header_mobile.content"
+        "type": "collection",
+        "id": "collection_clenaser",
+        "label": "Cleansers + Toners"
+    },
+    {
+        "type": "collection",
+        "id": "collection_glow",
+        "label": "Glow Boosting Elixirs"
+    },
+    {
+        "type": "collection",
+        "id": "collection_moisturizers",
+        "label": "Skin Quenching Moisturizers"
     }
   ]
 }
