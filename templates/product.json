@@ -77,8 +77,12 @@
         "padding_bottom": 12
       }
     },
-    "product-biotonical-activites" : {
-      "type": "product-biotonical-activites"
+    "product-biotonical-activites": {
+      "type": "product-biotonical-activites",
+      "settings": {
+        "heading": "Clean Botanical <span>Actives:<\/span>",
+        "image": "shopify:\/\/shop_images\/clean-botanical-img.png"
+      }
     },
     "product-recommendations": {
       "type": "product-recommendations",
