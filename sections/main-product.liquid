@@ -284,11 +284,11 @@
             </div>
           {%- when 'custom_description' -%}  
             <div class="cus-description">
-              {% if section.settings.secondary_description != blank  %}
-              <p> {{ section.settings.secondary_description }} </p>
+              {% if block.settings.secondary_description != blank  %}
+              <p> {{ block.settings.secondary_description }} </p>
               {% endif %}
-                  {% if section.settings.focus_tagline != blank  %}
-              <p class="description-color"> {{ section.settings.focus_tagline }} </p>
+                  {% if block.settings.focus_tagline != blank  %}
+              <p class="description-color"> {{ block.settings.focus_tagline }} </p>
               {% endif %}
               <div class="quantity-cart-btn">
                   <div class="quantity-number">
@@ -301,13 +301,13 @@
                   </div>
               </div>
               <div class="benfits-tips">
-                  {% if section.settings.benefits != blank %}
+                  {% if block.settings.benefits != blank %}
                   <h4>Benefits:</h4>
-                  <p>{{ section.settings.benefits }}</p>
+                  <p>{{ block.settings.benefits }}</p>
                   {% endif %}
-                  {% if section.settings.tips != blank %}
+                  {% if block.settings.tips != blank %}
                   <h4>Tips:</h4>
-                  <p>{{ section.settings.tips }}</p>
+                  <p>{{ block.settings.tips }}</p>
                   {% endif %}
               </div>
               <div class="share-blogs share-product">
