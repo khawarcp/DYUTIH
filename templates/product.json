@@ -421,7 +421,29 @@
         "61d45ce6-7c17-498f-8a49-a7647ceb6113": {
           "type": "Step",
           "settings": {
+            "image": "shopify:\/\/shop_images\/skin-care-img5.png",
             "info": "Use daily or alternate with Face Oil Apply the serum morning and\/or evening on cleansed skin. Gently massage the face and the neck until completely absorbed. Follow with moisturizer."
+          }
+        },
+        "08c58820-39c1-4e6d-b6b1-d7e5d58a3cd8": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step-img6.png",
+            "info": "Use daily or alternate with Ultra Glow Boosting Vitamin C Serum Use daily, morning and\/or evening, on cleansed skin. Evenly apply the oil onto the face and neck. Gently massage the face and the neck until completely absorbed. Follow with the cream for your skin type."
+          }
+        },
+        "3844fdcd-c593-410d-95d3-e76b7c366adf": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin-care-img7.png",
+            "info": "Use daily, morning and\/or evening, after removal of makeup on eyelids. Apply the cream lightly using ring finger along eye contour. Massage lightly until absorbed."
+          }
+        },
+        "faf4d905-dd2a-4cc7-91aa-e9579cccc1cf": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step-img8.png",
+            "info": "Apply the cream morning and\/or evening on cleansed skin. Gently massage the face and the neck until completely absorbed."
           }
         }
       },
@@ -430,7 +452,10 @@
         "b413edfd-ba88-470e-9070-18449db48100",
         "4778f1f4-9bf2-4b1e-b32e-71626cdd072f",
         "fd52db93-bdec-4e31-9360-ab34b982245b",
-        "61d45ce6-7c17-498f-8a49-a7647ceb6113"
+        "61d45ce6-7c17-498f-8a49-a7647ceb6113",
+        "08c58820-39c1-4e6d-b6b1-d7e5d58a3cd8",
+        "3844fdcd-c593-410d-95d3-e76b7c366adf",
+        "faf4d905-dd2a-4cc7-91aa-e9579cccc1cf"
       ],
       "settings": {
         "heading": "Complete your skin routine",
