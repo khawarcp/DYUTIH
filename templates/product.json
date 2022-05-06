@@ -407,21 +407,21 @@
         "4778f1f4-9bf2-4b1e-b32e-71626cdd072f": {
           "type": "Step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/skin-care-img3.png",
+            "image": "shopify:\/\/shop_images\/step-img3.png",
             "info": "Use daily, after cleansing the skin. Spray the Toner over the face and the neck, avoiding the eye area or apply with a cotton pad. Can be used as an essence\/ primer before applying moisturizer under makeup for long-lasting results."
           }
         },
         "fd52db93-bdec-4e31-9360-ab34b982245b": {
           "type": "Step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/skin-care-img4.png",
+            "image": "shopify:\/\/shop_images\/step-img4.png",
             "info": "Once or twice a week, apply the Exfoliating Gel on previously dampened skin. Massage and rinse. Can be used for face & body."
           }
         },
         "61d45ce6-7c17-498f-8a49-a7647ceb6113": {
           "type": "Step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/skin-care-img5.png",
+            "image": "shopify:\/\/shop_images\/step-img5.png",
             "info": "Use daily or alternate with Face Oil Apply the serum morning and\/or evening on cleansed skin. Gently massage the face and the neck until completely absorbed. Follow with moisturizer."
           }
         },
@@ -435,7 +435,7 @@
         "3844fdcd-c593-410d-95d3-e76b7c366adf": {
           "type": "Step",
           "settings": {
-            "image": "shopify:\/\/shop_images\/skin-care-img7.png",
+            "image": "shopify:\/\/shop_images\/step-img7.png",
             "info": "Use daily, morning and\/or evening, after removal of makeup on eyelids. Apply the cream lightly using ring finger along eye contour. Massage lightly until absorbed."
           }
         },
