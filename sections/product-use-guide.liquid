@@ -10,17 +10,19 @@
     <div class="best-seller-slider">
         <div class="owl-carousel">
             {% for block in section.blocks %}
-                <div class="item">
-                    <div class="best-seller-col">
-                        <h4>Step {{ forloop.index }}</h4>
-                        <div class="best-seller-img">
-                            <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy"  alt="step-img1">
-                        </div>
-                        <div class="best-seller-text">
-                            <p> {{ block.settings.info }} </p>
+                {% if block.settings.image != blank or block.settings.info != blank %}
+                    <div class="item">
+                        <div class="best-seller-col">
+                            <h4>Step {{ forloop.index }}</h4>
+                            <div class="best-seller-img">
+                                <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy"  alt="step-img1">
+                            </div>
+                            <div class="best-seller-text">
+                                <p> {{ block.settings.info }} </p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
