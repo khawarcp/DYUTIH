@@ -284,10 +284,12 @@
             </div>
           {%- when 'custom_description' -%}  
             <div class="cus-description">
-              <p>DYUTIH Organics PURIFYING Coconut Gel Cleanser features moisturizing Coconut Oil and Aloe
-                  Vera to help gently cleanse the face, body and hair without drying.</p>
-              <p class="description-color">Use daily for face, body and hair to help instantly hydrate and
-                  nourish.</p>
+              {% if section.settings.secondary_description != blank  %}
+              <p> {{ section.settings.secondary_description }} </p>
+              {% endif %}
+                  {% if section.settings.focus_tagline != blank  %}
+              <p class="description-color"> {{ section.settings.focus_tagline }} </p>
+              {% endif %}
               <div class="quantity-cart-btn">
                   <div class="quantity-number">
                       <button class="qtyminus" aria-hidden="true">&minus;</button>
@@ -299,18 +301,28 @@
                   </div>
               </div>
               <div class="benfits-tips">
+                  {% if section.settings.benefits != blank %}
                   <h4>Benefits:</h4>
-                  <p>Help to eliminate all traces of makeup, dirt and impurities from the skin Nourishes
-                      and hydrates skin for a silky finish.</p>
+                  <p>{{ section.settings.benefits }}</p>
+                  {% endif %}
+                  {% if section.settings.tips != blank %}
                   <h4>Tips:</h4>
-                  <p>Use daily for face, body and hair to help instantly hydrate and nourish.</p>
+                  <p>{{ section.settings.tips }}</p>
+                  {% endif %}
               </div>
               <div class="share-blogs share-product">
                   <h5>Share:</h5>
                   <ul>
-                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                      <li>
+                        <a target="_blank" href="//www.facebook.com/sharer.php?u={{ shop.url | append: product.url }}">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a target="_blank" href="//twitter.com/share?text={{ product.title | url_param_escape }}&amp;url={{ shop.url | append: product.url }}">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                       </a>
+                      </li>
                   </ul>
               </div>
           </div>
