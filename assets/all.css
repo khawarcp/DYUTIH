@@ -332,7 +332,7 @@ header {
 
 .dyutih-img-col img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .home-banner.home-parallex-video::before {
