@@ -287,6 +287,66 @@
           "settings": {
             "ingredient": "Glycine Soja (Soybean) Oil"
           }
+        },
+        "ae98705b-5e8e-4278-bda8-c0025cead069": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Eugenia Caryophyllus (Clove) Flower Extract"
+          }
+        },
+        "c8150a68-ec72-4f61-a021-4f8fa1a542c4": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Cucumis Melo Cantalupensis Fruit Extract"
+          }
+        },
+        "08fb6d58-dd44-433c-bb80-765def60801b": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Cananga Odorata Flower Extract"
+          }
+        },
+        "3f190248-7204-490c-ad78-6b1a48d44a69": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Caprylic\/Capric Triglyceride"
+          }
+        },
+        "d25d4b4f-2e99-475f-935f-b7ffc7fd9064": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Citric Acid"
+          }
+        },
+        "404ce5d5-8740-42f5-ad27-73a31e3b4c28": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Arginine"
+          }
+        },
+        "45654cba-1e47-4c31-bc8b-4be9d7a3aeec": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Citrus Medica Limonum (Lemon) Peel Oil*"
+          }
+        },
+        "31f15685-0975-4bd4-9ce0-3bd1845b7c31": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Sodium Gluconate"
+          }
+        },
+        "0fd0b34e-1e2e-41a3-a866-3f4975453059": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Camellia Sinensis Leaf Extract"
+          }
+        },
+        "c83439ac-2ed8-4925-870a-41cf35a08d2a": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Potassium Sorbate"
+          }
         }
       },
       "block_order": [
@@ -310,7 +370,17 @@
         "6ed3d44d-a16e-4396-9bf2-8ca1d906bbd9",
         "2be76f34-cf8a-4f3c-a01c-b5886b2bca7a",
         "343a7bfe-cf3c-4a56-aa35-ec03167fa916",
-        "a3edc0bb-838d-4fda-af5a-658a98c78835"
+        "a3edc0bb-838d-4fda-af5a-658a98c78835",
+        "ae98705b-5e8e-4278-bda8-c0025cead069",
+        "c8150a68-ec72-4f61-a021-4f8fa1a542c4",
+        "08fb6d58-dd44-433c-bb80-765def60801b",
+        "3f190248-7204-490c-ad78-6b1a48d44a69",
+        "d25d4b4f-2e99-475f-935f-b7ffc7fd9064",
+        "404ce5d5-8740-42f5-ad27-73a31e3b4c28",
+        "45654cba-1e47-4c31-bc8b-4be9d7a3aeec",
+        "31f15685-0975-4bd4-9ce0-3bd1845b7c31",
+        "0fd0b34e-1e2e-41a3-a866-3f4975453059",
+        "c83439ac-2ed8-4925-870a-41cf35a08d2a"
       ],
       "settings": {
         "heading": "Full Ingredient Listing:",
