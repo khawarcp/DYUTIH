@@ -1645,7 +1645,7 @@ input[type=number] {
     color: #231F20;
     letter-spacing: -0.03em;
     line-height: 23px;
-    background-image: url('../images/faq-list-icon.png');
+    background-image: url('faq-list-icon.png');
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: 0px 5px;
