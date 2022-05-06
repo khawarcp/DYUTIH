@@ -383,12 +383,59 @@
         "c83439ac-2ed8-4925-870a-41cf35a08d2a"
       ],
       "settings": {
-        "heading": "Full Ingredient Listing:",
+        "heading": "Full Ingredient <span>Listing:<\/span>",
         "note": "*Ingredients from organic farming."
       }
     },
-    "product-use-guide" :{
-      "type": "product-use-guide"
+    "product-use-guide": {
+      "type": "product-use-guide",
+      "blocks": {
+        "be364ee7-0ead-4bb7-a7ba-b863b3720e0c": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step-img1.png",
+            "info": "Use daily, morning and\/or evening. Apply the Cleansing Milk over the face and the neck on a cotton pad and cleanse the skin.  Follow with Coconut Gel Cleanser."
+          }
+        },
+        "b413edfd-ba88-470e-9070-18449db48100": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/step-img2.png",
+            "info": "Apply the Cleansing Gel over damp skin.  Can be used in the shower or bath for face, hair and body."
+          }
+        },
+        "4778f1f4-9bf2-4b1e-b32e-71626cdd072f": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin-care-img3.png",
+            "info": "Use daily, after cleansing the skin. Spray the Toner over the face and the neck, avoiding the eye area or apply with a cotton pad. Can be used as an essence\/ primer before applying moisturizer under makeup for long-lasting results."
+          }
+        },
+        "fd52db93-bdec-4e31-9360-ab34b982245b": {
+          "type": "Step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skin-care-img4.png",
+            "info": "Once or twice a week, apply the Exfoliating Gel on previously dampened skin. Massage and rinse. Can be used for face & body."
+          }
+        },
+        "61d45ce6-7c17-498f-8a49-a7647ceb6113": {
+          "type": "Step",
+          "settings": {
+            "info": "Use daily or alternate with Face Oil Apply the serum morning and\/or evening on cleansed skin. Gently massage the face and the neck until completely absorbed. Follow with moisturizer."
+          }
+        }
+      },
+      "block_order": [
+        "be364ee7-0ead-4bb7-a7ba-b863b3720e0c",
+        "b413edfd-ba88-470e-9070-18449db48100",
+        "4778f1f4-9bf2-4b1e-b32e-71626cdd072f",
+        "fd52db93-bdec-4e31-9360-ab34b982245b",
+        "61d45ce6-7c17-498f-8a49-a7647ceb6113"
+      ],
+      "settings": {
+        "heading": "Complete your skin routine",
+        "subheading": "When & How To Use"
+      }
     },
     "product-recommendations": {
       "type": "product-recommendations",
