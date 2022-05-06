@@ -4,9 +4,15 @@
       "type": "shop-banner",
       "settings": {
       }
+    },
+    "shop-products": {
+      "type": "shop-products",
+      "settings": {
+      }
     }
   },
   "order": [
-    "shop-banner"
+    "shop-banner",
+    "shop-products"
   ]
 }
