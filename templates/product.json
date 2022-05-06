@@ -77,6 +77,9 @@
         "padding_bottom": 12
       }
     },
+    "product-biotonical-activites" : {
+      "type": "product-biotonical-activites"
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -98,6 +101,7 @@
   },
   "order": [
     "main",
+    "product-biotonical-activites",
     "product-recommendations"
   ]
 }

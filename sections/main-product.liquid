@@ -284,8 +284,8 @@
             </div>
           {%- when 'custom_description' -%}  
             <div class="cus-description">
-              {% if product.metafields.my_fields.secondary_description != blank  %}
-              <p> {{ product.metafields.my_fields.secondary_description }} </p>
+              {% if product.description != blank  %}
+              <p> {{ product.description }} </p>
               {% endif %}
                   {% if product.metafields.my_fields.focus_tagline != blank  %}
               <p class="description-color"> {{ product.metafields.my_fields.focus_tagline }} </p>

@@ -1,0 +1,58 @@
+<section class="clean-botanical-actives">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="actives-text-col">
+                    <h4> {{ section.settings.heading }} </h4>
+                    <ul>
+                        {% for block in section.blocks %}
+                        {% if block.settings.info != blank %}
+                          <li><span>{{ block.settings.title }} </span> - {{ block.settings.info }} </li>                            
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="clean-botanical-img">
+                    <img src="{{ section.settings.image | img_url: 'master' }} " alt="clean-botanical-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name" : "Botanical Activities",
+   "settings": [
+      {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+      },
+     {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image"
+     }
+   ],
+   "blocks":[
+     {
+            "type": "activity",
+            "name" : "Activity",
+            "settings" :[
+               {
+                   "type": "text",
+                   "id": "title",
+                   "label": "Title"
+               },
+              {
+                  "type": "textarea",
+                  "id": "info",
+                  "label": "Info"
+              }
+            ]
+     }
+   ]
+}
+{% endschema %}
