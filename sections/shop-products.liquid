@@ -134,7 +134,7 @@
                       <div class="tab-pane fade show" id="home" role="tabpanel" aria-labelledby="home-tab">
                           <div class="container">
                               <div class="row">
-                                {% for product in collections[section.settings.collection_clenaser].products limit : 3 %}                     
+                                {% for product in collections[section.settings.collection_clenaser].products %}                     
                                 <div class="col-md-4">
                                     <div class="skin-care-col">
                                         <div class="skin-care-img">
@@ -157,7 +157,7 @@
                       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                           <div class="container">
                               <div class="row">
-                                {% for product in collections[section.settings.collection_glow].products limit : 3 %}                     
+                                {% for product in collections[section.settings.collection_glow].products %}                     
                                 <div class="col-md-4">
                                     <div class="skin-care-col">
                                         <div class="skin-care-img">
@@ -180,7 +180,7 @@
                       <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                           <div class="container">
                               <div class="row">
-                                {% for product in collections[section.settings.collection_moisturizers].products limit : 3 %}                     
+                                {% for product in collections[section.settings.collection_moisturizers].products %}                     
                                 <div class="col-md-4">
                                     <div class="skin-care-col">
                                         <div class="skin-care-img">
@@ -191,7 +191,7 @@
                                             <h4> {{ product.metafields.my_fields.product_subtitle }} </h4>
                                             <p> {{ product.description | split: '.' | first }} </p>
                                             <div class="custom-site-btn">
-                                                <a href="{{ product.url }}"><img src="{{ 'button-arrow.svg' | asset_img_url }}" alt="">SHOP NOW </a>
+                                                <a href="{{ product.url }}"><img src="{{ 'button-arrow.svg' | asset_url }}" alt="">SHOP NOW </a>
                                             </div>
                                         </div>
                                     </div>
