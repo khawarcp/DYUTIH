@@ -159,8 +159,163 @@
         "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0642\/3828\/9152\/files\/4.mp4?v=1651207094"
       }
     },
-    "product-ingredients" : {
-      "type": "product-ingredients"
+    "product-ingredients": {
+      "type": "product-ingredients",
+      "blocks": {
+        "ecf45508-d958-4ad0-a2b9-77199c4e23cd": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Cinnamomum Cassia Bark Extract"
+          }
+        },
+        "564b8f63-9d23-48c2-8e6e-24cbfd041b1e": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Water (Aqua)"
+          }
+        },
+        "d36f43dd-6f73-4280-a636-ea241279ee1c": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Decyl Glucoside"
+          }
+        },
+        "4f8eadd6-6777-41f7-b667-320144f59c17": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Propanediol"
+          }
+        },
+        "2526e49f-4dda-4b2c-b3e2-638c8683b1f8": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Glycerin* (Vegetal)"
+          }
+        },
+        "b41ee17c-90fa-4e8b-a0bb-6e10d69653c2": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Olea Europaea (Olive) Fruit Oil*"
+          }
+        },
+        "c636aad0-a2ed-46a8-bd25-534ba9ce8672": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Cocos Nucifera (Coconut) Oil*"
+          }
+        },
+        "8bcdeb95-1cb7-4e1f-9859-7812849350fe": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Chondrus Crispus (Carrageenan)"
+          }
+        },
+        "dab36340-9899-4763-b20b-cd233069abed": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Cellulose Gum"
+          }
+        },
+        "97adabe7-ff30-49a6-b3ea-8201543b9ef5": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Eucalyptus Globulus Leaf Oil*"
+          }
+        },
+        "67dfddab-a5fe-4748-9717-827c6f8f25fb": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Xanthan Gum"
+          }
+        },
+        "a23f8d5e-c840-4952-929f-03027da3bbb2": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Levulinic Acid"
+          }
+        },
+        "74abb42e-719c-41eb-8d7f-9d2ed1a8d133": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Sodium Levulinate"
+          }
+        },
+        "d8b0b30c-b43c-427d-aa36-0de1de97d7f1": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Orchis Mascula Flower Extract"
+          }
+        },
+        "c6df31f9-9b53-4564-a15a-964631c9696e": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Coffea Arabica (Coffee) Leaf\/Seed Extract"
+          }
+        },
+        "1c808955-0a6f-4364-9b7b-7e3fc7623736": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Jasminum Officinale (Jasmine) Flower\/Leaf Extract"
+          }
+        },
+        "c3a94e86-6d27-4719-9aed-02bb640f2610": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Cinnamomum Cassia Bark Extract"
+          }
+        },
+        "6ed3d44d-a16e-4396-9bf2-8ca1d906bbd9": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Rose Extract"
+          }
+        },
+        "2be76f34-cf8a-4f3c-a01c-b5886b2bca7a": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Prunus Armeniaca (Apricot) Fruit Extract"
+          }
+        },
+        "343a7bfe-cf3c-4a56-aa35-ec03167fa916": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Pyrus Malus (Apple) Fruit Extract"
+          }
+        },
+        "a3edc0bb-838d-4fda-af5a-658a98c78835": {
+          "type": "Ingredient",
+          "settings": {
+            "ingredient": "Glycine Soja (Soybean) Oil"
+          }
+        }
+      },
+      "block_order": [
+        "ecf45508-d958-4ad0-a2b9-77199c4e23cd",
+        "564b8f63-9d23-48c2-8e6e-24cbfd041b1e",
+        "d36f43dd-6f73-4280-a636-ea241279ee1c",
+        "4f8eadd6-6777-41f7-b667-320144f59c17",
+        "2526e49f-4dda-4b2c-b3e2-638c8683b1f8",
+        "b41ee17c-90fa-4e8b-a0bb-6e10d69653c2",
+        "c636aad0-a2ed-46a8-bd25-534ba9ce8672",
+        "8bcdeb95-1cb7-4e1f-9859-7812849350fe",
+        "dab36340-9899-4763-b20b-cd233069abed",
+        "97adabe7-ff30-49a6-b3ea-8201543b9ef5",
+        "67dfddab-a5fe-4748-9717-827c6f8f25fb",
+        "a23f8d5e-c840-4952-929f-03027da3bbb2",
+        "74abb42e-719c-41eb-8d7f-9d2ed1a8d133",
+        "d8b0b30c-b43c-427d-aa36-0de1de97d7f1",
+        "c6df31f9-9b53-4564-a15a-964631c9696e",
+        "1c808955-0a6f-4364-9b7b-7e3fc7623736",
+        "c3a94e86-6d27-4719-9aed-02bb640f2610",
+        "6ed3d44d-a16e-4396-9bf2-8ca1d906bbd9",
+        "2be76f34-cf8a-4f3c-a01c-b5886b2bca7a",
+        "343a7bfe-cf3c-4a56-aa35-ec03167fa916",
+        "a3edc0bb-838d-4fda-af5a-658a98c78835"
+      ],
+      "settings": {
+        "heading": "Full Ingredient Listing:",
+        "note": "*Ingredients from organic farming."
+      }
     },
     "product-recommendations": {
       "type": "product-recommendations",
