@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "shop-banner": {
+      "type": "shop-banner",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "shop-banner"
+  ]
+}
