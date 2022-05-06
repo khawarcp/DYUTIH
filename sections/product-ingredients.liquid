@@ -1,0 +1,46 @@
+<section class="full-ingredient-listing-sec">
+    <div class="container">
+        <h4> {{ section.settings.heading }} </h4>
+        <div class="ingredient-listing">
+            <ul>
+                {% for block in section.blocks %}
+                    {% if block.settings.ingredient != blank %}                        
+                        <li>{{ block.settings.ingredient }}</li>                    
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <p>{{ block.settings.note }}</p>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name" : "Ingredient Listing",
+    "settings" : [
+       {
+           "type": "text",
+           "id": "heading",
+           "label": "Heading"
+       }
+    ],
+    "blocks" : [
+        {
+            "name" : "ingredient-listing",
+            "type" : "Ingredient",
+           "settings": [
+              {
+                  "type": "text",
+                "id": "ingredient",
+                  "label": "Ingredient"
+              },
+             {
+                 "type": "text",
+                 "id": "note",
+                 "label": "Note"
+             }
+           ]
+        }
+    ]
+}
+{% endschema %}

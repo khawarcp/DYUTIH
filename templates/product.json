@@ -159,6 +159,9 @@
         "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0642\/3828\/9152\/files\/4.mp4?v=1651207094"
       }
     },
+    "product-ingredients" : {
+      "type": "product-ingredients"
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -183,6 +186,7 @@
     "product-biotonical-activites",
     "product-botanical-properties",
     "product-parallex-video",
+    "product-ingredients",
     "product-recommendations"
   ]
 }
