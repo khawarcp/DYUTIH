@@ -29,12 +29,6 @@
             "tips": ""
           }
         },
-        "7f40a7f2-47d2-4d95-8d34-c96f262888ee": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{{ product.metafields.my_fields.secondary_description }}"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -43,17 +37,20 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": false
           }
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
@@ -64,7 +61,6 @@
         "caption",
         "price",
         "327703db-7363-4b46-8d34-01f4a0bf1bea",
-        "7f40a7f2-47d2-4d95-8d34-c96f262888ee",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
