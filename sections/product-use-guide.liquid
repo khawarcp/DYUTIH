@@ -1,0 +1,63 @@
+<section class="best-seller-sec complete-skin-routine">
+    <div class="container">
+        <div class="best-seller-top-text">
+            <div class="best-seller-title">
+                <h6> {{ section.settings.subheading }} </h6>
+                <h2> {{ section.settings.heading }} </h2>
+            </div>
+        </div>
+    </div>
+    <div class="best-seller-slider">
+        <div class="owl-carousel">
+            {% for block in section.blocks %}
+                <div class="item">
+                    <div class="best-seller-col">
+                        <h4>Step {{ forloop.index }}</h4>
+                        <div class="best-seller-img">
+                            <img src="{{ block.settings.image | img_url: 'master' }}" loading="lazy"  alt="step-img1">
+                        </div>
+                        <div class="best-seller-text">
+                            <p> {{ block.settings.info }} </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name" : "Use Guide",
+    "settings" : [
+       {
+           "type": "text",
+           "id": "heading",
+           "label": "Heading"
+       },
+      {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+      }
+    ],
+    "blocks" : [
+      {
+          "name" : "Step",
+            "type" : "Step",
+            "settings" :[
+               {
+                   "type": "image_picker",
+                   "id": "image",
+                   "label": "Image"
+               },
+              {
+                  "type": "textarea",
+                  "id": "info",
+                  "label": "Description"
+              }
+            ]
+      }
+    ]
+}
+{% endschema %}

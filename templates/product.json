@@ -387,6 +387,9 @@
         "note": "*Ingredients from organic farming."
       }
     },
+    "product-use-guide" :{
+      "type": "product-use-guide"
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -412,6 +415,7 @@
     "product-botanical-properties",
     "product-parallex-video",
     "product-ingredients",
+    "product-use-guide",
     "product-recommendations"
   ]
 }
