@@ -93,7 +93,7 @@
         "ae2a6986-af5e-439c-b4a4-d2d20e44ace8"
       ],
       "settings": {
-        "heading": "Clean Botanical <span>Actives: <\/span>",
+        "heading": "Clean Botanical Actives:",
         "image": "shopify:\/\/shop_images\/clean-botanical-img.png"
       }
     },
@@ -153,8 +153,11 @@
         "image_2": "shopify:\/\/shop_images\/clean-botanical-pro-img2.png"
       }
     },
-    "product-parallex-video":{
-      "type": "product-parallex-video"
+    "product-parallex-video": {
+      "type": "product-parallex-video",
+      "settings": {
+        "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0642\/3828\/9152\/files\/4.mp4?v=1651207094"
+      }
     },
     "product-recommendations": {
       "type": "product-recommendations",
