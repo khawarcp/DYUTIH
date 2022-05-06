@@ -79,8 +79,44 @@
     },
     "product-biotonical-activites": {
       "type": "product-biotonical-activites",
+      "blocks": {
+        "1c02c8e1-f151-4383-a35f-fdac4a8f1f4a": {
+          "type": "activity",
+          "settings": {
+            "title": "Coconut Oil",
+            "info": "Rich in unsaturated fatty acids and antioxidant polyphenols Nourishes the skin while hydrating it."
+          }
+        },
+        "ca198342-0bc9-4f30-8f78-bcd225429398": {
+          "type": "activity",
+          "settings": {
+            "title": "Tears of Bamboo Silica",
+            "info": "A natural exfoliant to provides a soft, silky and satiny feel to the touch Deeply cleans the skin and renders the skin smoother and the complexion brighter."
+          }
+        },
+        "c798d7cb-205a-4d05-99af-ee93459ba801": {
+          "type": "activity",
+          "settings": {
+            "title": "Decyl-Glucoside",
+            "info": "Gentle biodegradable surfactant with excellent foaming and cleansing propertiesto help soften while improving the appearance of the skin."
+          }
+        },
+        "ae2a6986-af5e-439c-b4a4-d2d20e44ace8": {
+          "type": "activity",
+          "settings": {
+            "title": "Aloe Vera Gel",
+            "info": "Moisturizing, soothing and protective emollient effect that softens the skin Protects the moisture barrier of the skin Rich in polysaccharides,vitaminsandminerals."
+          }
+        }
+      },
+      "block_order": [
+        "1c02c8e1-f151-4383-a35f-fdac4a8f1f4a",
+        "ca198342-0bc9-4f30-8f78-bcd225429398",
+        "c798d7cb-205a-4d05-99af-ee93459ba801",
+        "ae2a6986-af5e-439c-b4a4-d2d20e44ace8"
+      ],
       "settings": {
-        "heading": "Clean Botanical <span>Actives:<\/span>",
+        "heading": "Clean Botanical Actives:",
         "image": "shopify:\/\/shop_images\/clean-botanical-img.png"
       }
     },
