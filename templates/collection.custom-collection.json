@@ -3,7 +3,7 @@
     "shop-banner": {
       "type": "shop-banner",
       "settings": {
-        "title": "DYUTIH \/•DO-TEA\/",
+        "title": "DYUTIH <span> \/•DO-TEA\/ <\/span>",
         "info": "<p>DYUTIH (do-tea) means ‘beauty’ in ancient Sanskrit, DYUTIH features a modern alchemy of organically formed ingredients to target skin concerns using minimalist, high performing, plant-based, clean formulations.<\/p>",
         "banner": "shopify:\/\/shop_images\/shop-banner.png"
       }
@@ -11,12 +11,8 @@
     "shop-products": {
       "type": "shop-products",
       "settings": {
-        "products_per_page": 16,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
