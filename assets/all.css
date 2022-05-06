@@ -1696,6 +1696,14 @@ input[type=number] {
 }
 .header-style2 header.header.header--middle-left.container.header--has-menu {/* height: 70px; */position: relative;}
 
+.header__icon--cart span {
+    color: #fff;
+}
+
+.cart-count-bubble {
+    background-color: #af272f;
+}
+
 /***************************
      
     ||  Media Query ||
