@@ -5,6 +5,14 @@
         </div>
         <div class="back-share-blogs">
             <a href="{{ blog.url }}" class="back-blog-link"><img src="{{ 'button-arrow.svg' | asset_url }}" alt="">{{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
+          <div class="share-blogs">
+            <h5>Share:</h5>
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
             <div class="share-blogs">
                 <div class="article-template__social-sharing page-width page-width--narrow" {{ block.shopify_attributes }}>
                     <share-button class="share-button" {{ block.shopify_attributes }}>
