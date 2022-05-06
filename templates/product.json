@@ -20,6 +20,15 @@
           "settings": {
           }
         },
+        "327703db-7363-4b46-8d34-01f4a0bf1bea": {
+          "type": "custom_description",
+          "settings": {
+            "secondary_description": "",
+            "focus_tagline": "",
+            "benefits": "",
+            "tips": ""
+          }
+        },
         "7f40a7f2-47d2-4d95-8d34-c96f262888ee": {
           "type": "custom_liquid",
           "settings": {
@@ -54,6 +63,7 @@
         "title",
         "caption",
         "price",
+        "327703db-7363-4b46-8d34-01f4a0bf1bea",
         "7f40a7f2-47d2-4d95-8d34-c96f262888ee",
         "variant_picker",
         "quantity_selector",
