@@ -2304,4 +2304,8 @@ header.header.header--middle-left path {
     z-index: 2;
 }
 
+  .quantity-number {
+    width: 90%;
+  }
+  
 }
