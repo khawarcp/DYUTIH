@@ -1538,6 +1538,7 @@ input[type=number] {
 
 .add-to-cart-btn button span{
     color: #FFFFFF;
+  text-transform : uppercase;
 }
 
 
