@@ -1478,7 +1478,7 @@ p.description-color {
 }
 
 .quantity-number {
-    width: 48.5%;
+    width: 100%;
     border: 1px solid #AF612C;
     display: flex;
     justify-content: space-between;
