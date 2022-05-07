@@ -532,7 +532,7 @@ header.header.header--middle-left.container.header--has-menu.header-style2 .head
 }
 
 body {
-    background-color: #F0EEE4;
+    background-color: #F0EEE4 !important;
 }
 
 .dyutih-images-slider-sec {
