@@ -291,7 +291,7 @@
               <p class="description-color"> {{ product.metafields.my_fields.focus_tagline }} </p>
               {% endif %}
               <div class="quantity-cart-btn">
-                  <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
+                  <div class="product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
                     <quantity-input class="quantity quantity-number">
                       <button class="quantity__button no-js-hidden qtyminus" name="minus" type="button">
                         <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
