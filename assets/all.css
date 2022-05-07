@@ -1487,7 +1487,7 @@ p.description-color {
     justify-content: space-between;
     height: 36px;
   	min-height : 36px;
-  
+      background: #f0eee4;
 }
 
 .add-to-cart-btn {
