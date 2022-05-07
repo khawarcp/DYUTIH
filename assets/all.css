@@ -1711,6 +1711,15 @@ details[open] .modal-overlay:after {
     max-width: 82.5vw;
     margin-left: auto;
 }
+
+
+.header-style2 nav .header__icons.user-cart a img {
+    filter: brightness(0.2) invert(1);
+}
+.header-wrapper.header-style2 .header__search img, .header-wrapper.header-style2 .header__icons a img {
+    filter: brightness(100%) invert(1);
+}
+
 /***************************
      
     ||  Media Query ||
