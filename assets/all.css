@@ -1530,6 +1530,7 @@ input[type=number] {
     align-items: center;
     color: #FFFFFF;
     height: 36px;
+  min-height: 36px;
     width: 100%;
     justify-content: center;
     font-size: 12px;
