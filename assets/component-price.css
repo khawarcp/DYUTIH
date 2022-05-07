@@ -24,6 +24,9 @@
 
 .price__regular .price-item--regular {
   margin-right: 0;
+  color: rgb(175 39 47 / 80%);
+    font-size: 18px;
+    font-family: 'switzer-regular';
 }
 
 .price:not(.price--show-badge) .price-item--last:last-of-type {
