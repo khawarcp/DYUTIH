@@ -947,6 +947,8 @@ footer {
 
 .skin-care-img img {
     width: 100%;
+      height: 392px;
+    object-fit: cover;
 }
 
 .best-seller-img:hover {
